@@ -44,6 +44,7 @@
 @layer theme {
   :root, :host {
     --color-blue-50: #eff6ff;
+    --color-blue-500: #3080ff;
     --color-blue-600: #155dfc;
     --color-blue-700: #1447e6;
     --color-gray-50: #f9fafb;
@@ -69,6 +70,7 @@
   @supports (color: color(display-p3 0 0 0)) {
     :root, :host {
       --color-blue-50: color(display-p3 .941826 .963151 .995385);
+      --color-blue-500: color(display-p3 .266422 .491219 .988624);
       --color-blue-600: color(display-p3 .174493 .358974 .950247);
       --color-blue-700: color(display-p3 .1379 .274983 .867624);
       --color-gray-50: color(display-p3 .977213 .98084 .985102);
@@ -79,6 +81,7 @@
   @supports (color: lab(0% 0 0)) {
     :root, :host {
       --color-blue-50: lab(96.492% -1.14647 -5.11479);
+      --color-blue-500: lab(54.1736% 13.3368 -74.6839);
       --color-blue-600: lab(44.0605% 29.0279 -86.0352);
       --color-blue-700: lab(36.9089% 35.0961 -85.6872);
       --color-gray-50: lab(98.2596% -.247031 -.706708);
@@ -614,6 +617,12 @@
   @media (hover: hover) {
     .hover\:bg-blue-700:hover {
       background-color: var(--color-blue-700);
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:text-blue-500:hover {
+      color: var(--color-blue-500);
     }
   }
 

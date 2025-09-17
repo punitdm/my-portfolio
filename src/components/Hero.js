@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section className="flex flex-col-reverse md:flex-row items-center justify-between px-8 py-20 max-w-6xl mx-auto">
@@ -21,11 +23,16 @@ export default function Hero() {
           </a>
         </div>
       </div>
+
+      {/* ✅ Use Next.js Image instead of img */}
       <div className="md:w-1/2 flex justify-center mb-8 md:mb-0">
-        <img
+        <Image
           src="/profile.jpg"
           alt="Punit Chauhan"
-          className="w-64 h-64 rounded-4xl object-cover shadow-lg"
+          width={256} // ~w-64
+          height={256} // ~h-64
+          className="rounded-4xl object-cover shadow-lg"
+          priority // helps with faster LCP
         />
       </div>
     </section>
