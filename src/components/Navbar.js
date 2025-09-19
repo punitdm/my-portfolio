@@ -2,12 +2,12 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-4 mx-auto w-4/5 flex justify-between items-center
-                    px-8 py-4 bg-[#4241427d] backdrop-blur-md border border-white/20 rounded-full
+    <nav className="sticky top-2 mx-auto w-4/5 flex justify-between items-center
+                    px-3 py-2 bg-[#4241427d] backdrop-blur-md border border-white/20 rounded-full
                     shadow-lg hover:shadow-2xl transition-all duration-300 z-50">
-      <h1 className="text-2xl font-bold">Punit</h1>
+      <h1 className="text-2xl font-bold pl-4">Punit</h1>
 
-      <ul className="flex gap-6 text-2xl">
+      <ul className="flex gap-10 text-2xl">
         <li><Link href="/" className="nav-link">Home</Link></li>
         <li><Link href="/services" className="nav-link">Services</Link></li>
         <li><Link href="/about" className="nav-link">About</Link></li>

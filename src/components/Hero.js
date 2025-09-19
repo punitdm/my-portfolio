@@ -1,19 +1,65 @@
+"use client";
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import BackgroundIllustration from "./BackgroundIllustration";
 
 export default function Hero() {
+  const roles = [
+    "Performance Marketer",
+    "E-Commerce Expert",
+    "Website Developer",
+  ];
+  const [index, setIndex] = useState(0);
+
+  // cycle roles every 2.5s
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % roles.length);
+    }, 2500);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <section className="flex flex-col-reverse md:flex-row items-center justify-between px-8 py-20 max-w-6xl mx-auto">
+    <section className="relative flex flex-col-reverse md:flex-row items-center justify-between px-8 py-20 max-w-6xl mx-auto">
+          {/* Background Blobs */}
+          <BackgroundIllustration />
+
+          {/* Content */}
       <div className="text-center md:text-left md:w-1/2">
-        <h1 className="text-5xl font-bold mb-4">Hi, I’m Punit Chauhan</h1>
+        <h1 className="text-5xl mb-4">
+          Hi, I’m{" "}
+          <span className="font-extrabold text-[#f3cbff]">Punit Chauhan</span>,{" "}
+          <AnimatePresence mode="wait">
+            <motion.span
+              key={roles[index]}
+              initial={{ rotateX: 90, opacity: 0 }}
+              animate={{ rotateX: 0, opacity: 1 }}
+              exit={{ rotateX: -90, opacity: 0 }}
+              transition={{ duration: 0.6 }}
+              className="inline-block font-semibold text-white"
+            >
+              {roles[index]}
+            </motion.span>
+          </AnimatePresence>
+        </h1>
+
         <p className="text-lg mb-6">
-          Performance-focused marketer and web developer with 3+ years experience driving revenue growth for
-          ecommerce brands across 5+ countries. Specialized in running ROI-driven ad campaigns (Meta + Google),
-          SEO strategies, and conversion-optimized Shopify/WordPress builds. Proven track record of managing 60+
-          projects that delivered measurable business results — not just traffic, but real sales and scale.
+          with 3+ years experience driving revenue growth for ecommerce brands
+          across 5+ countries. Specialized in running ROI-driven ad campaigns
+          (Meta + Google), SEO strategies, and conversion-optimized
+          Shopify/WordPress builds. Proven track record of managing 60+ projects
+          that delivered measurable business results — not just traffic, but
+          real sales and scale.
         </p>
+
         <div className="flex justify-center md:justify-start gap-4">
-          <a href="/resume.pdf" className="btn-gradient rounded-lg">Download Resume</a>
-          <a href="#contact" className="btn-gradient rounded-lg">Contact Me</a>
+          <a href="/resume.pdf" className="btn-gradient rounded-lg">
+            Download Resume
+          </a>
+          <a href="#contact" className="btn-gradient rounded-lg">
+            Hire Me
+          </a>
         </div>
       </div>
 
