@@ -4,28 +4,22 @@ export default function Navbar() {
   return (
     <nav className="flex justify-between items-center px-32 py-4 bg-[#4241427d] shadow">
       <h1 className="text-2xl font-bold">My Portfolio</h1>
-      <ul className="flex gap-6">
+
+      <ul className="flex gap-6 text-2xl">
         <li>
-          <Link href="/" className="hover:text-blue-500">
-            Home
-          </Link>
+          <Link href="/" className="nav-link">Home</Link>
         </li>
         <li>
-          <Link href="/about" className="hover:text-blue-500">
-            About Me
-          </Link>
+          <Link href="/projects" className="nav-link">Projects</Link>
         </li>
         <li>
-          <Link href="/projects" className="hover:text-blue-500">
-            Projects
-          </Link>
+          <Link href="/contact" className="nav-link">Contact</Link>
         </li>
         <li>
-          <Link href="/contact" className="hover:text-blue-500">
-            Contact
-          </Link>
+          <Link href="/about" className="nav-link">About Me</Link>
         </li>
       </ul>
+
       <button>⚙️</button>
     </nav>
   );

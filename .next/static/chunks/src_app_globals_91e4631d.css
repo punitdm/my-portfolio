@@ -43,12 +43,11 @@
 
 @layer theme {
   :root, :host {
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --color-blue-50: #eff6ff;
     --color-blue-500: #3080ff;
     --color-blue-600: #155dfc;
     --color-blue-700: #1447e6;
-    --color-gray-50: #f9fafb;
-    --color-gray-900: #101828;
     --color-white: #fff;
     --spacing: .25rem;
     --container-6xl: 72rem;
@@ -63,8 +62,8 @@
     --radius-4xl: 2rem;
     --default-transition-duration: .15s;
     --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-    --default-font-family: var(--font-geist-sans);
-    --default-mono-font-family: var(--font-geist-mono);
+    --default-font-family: var(--font-geist);
+    --default-mono-font-family: var(--font-mono);
   }
 
   @supports (color: color(display-p3 0 0 0)) {
@@ -73,8 +72,6 @@
       --color-blue-500: color(display-p3 .266422 .491219 .988624);
       --color-blue-600: color(display-p3 .174493 .358974 .950247);
       --color-blue-700: color(display-p3 .1379 .274983 .867624);
-      --color-gray-50: color(display-p3 .977213 .98084 .985102);
-      --color-gray-900: color(display-p3 .070423 .0928982 .151928);
     }
   }
 
@@ -84,8 +81,6 @@
       --color-blue-500: lab(54.1736% 13.3368 -74.6839);
       --color-blue-600: lab(44.0605% 29.0279 -86.0352);
       --color-blue-700: lab(36.9089% 35.0961 -85.6872);
-      --color-gray-50: lab(98.2596% -.247031 -.706708);
-      --color-gray-900: lab(8.11897% .811279 -12.254);
     }
   }
 }
@@ -459,14 +454,6 @@
     display: flex;
   }
 
-  .h-64 {
-    height: calc(var(--spacing) * 64);
-  }
-
-  .w-64 {
-    width: calc(var(--spacing) * 64);
-  }
-
   .max-w-6xl {
     max-width: var(--container-6xl);
   }
@@ -524,10 +511,6 @@
     background-color: var(--color-blue-600);
   }
 
-  .bg-gray-50 {
-    background-color: var(--color-gray-50);
-  }
-
   .object-cover {
     object-fit: cover;
   }
@@ -560,6 +543,10 @@
     text-align: center;
   }
 
+  .font-sans {
+    font-family: var(--font-geist);
+  }
+
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -582,10 +569,6 @@
 
   .text-blue-600 {
     color: var(--color-blue-600);
-  }
-
-  .text-gray-900 {
-    color: var(--color-gray-900);
   }
 
   .text-white {
@@ -672,7 +655,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist), sans-serif;
 }
 
 @property --tw-border-style {

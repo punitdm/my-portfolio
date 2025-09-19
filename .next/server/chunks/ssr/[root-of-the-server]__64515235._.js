@@ -38,7 +38,7 @@ function Hero() {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "text-lg mb-6",
-                        children: "I build modern web apps and help brands grow online."
+                        children: "Performance-focused marketer and web developer with 3+ years experience driving revenue growth for ecommerce brands across 5+ countries. Specialized in running ROI-driven ad campaigns (Meta + Google), SEO strategies, and conversion-optimized Shopify/WordPress builds. Proven track record of managing 60+ projects that delivered measurable business results — not just traffic, but real sales and scale."
                     }, void 0, false, {
                         fileName: "[project]/src/components/Hero.js",
                         lineNumber: 8,
@@ -49,26 +49,26 @@ function Hero() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "/resume.pdf",
-                                className: "px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition",
+                                className: "btn-gradient",
                                 children: "Download Resume"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Hero.js",
-                                lineNumber: 12,
+                                lineNumber: 15,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "#contact",
-                                className: "px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition",
+                                className: "btn-gradient",
                                 children: "Contact Me"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Hero.js",
-                                lineNumber: 18,
+                                lineNumber: 16,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Hero.js",
-                        lineNumber: 11,
+                        lineNumber: 14,
                         columnNumber: 9
                     }, this)
                 ]
@@ -82,18 +82,18 @@ function Hero() {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                     src: "/profile.jpg",
                     alt: "Punit Chauhan",
-                    width: 256,
-                    height: 256,
-                    className: "rounded-4xl object-cover shadow-lg",
+                    width: 350,
+                    height: 350,
+                    className: "rounded-4xl object-cover shadow-lg bg-[#dc2adc7d]",
                     priority: true
                 }, void 0, false, {
                     fileName: "[project]/src/components/Hero.js",
-                    lineNumber: 29,
+                    lineNumber: 22,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Hero.js",
-                lineNumber: 28,
+                lineNumber: 21,
                 columnNumber: 7
             }, this)
         ]
