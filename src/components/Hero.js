@@ -12,21 +12,23 @@ export default function Hero() {
           projects that delivered measurable business results — not just traffic, but real sales and scale.
         </p>
         <div className="flex justify-center md:justify-start gap-4">
-          <a href="/resume.pdf" className="btn-gradient">Download Resume</a>
-          <a href="#contact" className="btn-gradient">Contact Me</a>
+          <a href="/resume.pdf" className="btn-gradient rounded-lg">Download Resume</a>
+          <a href="#contact" className="btn-gradient rounded-lg">Contact Me</a>
         </div>
       </div>
 
-      {/* ✅ Use Next.js Image instead of img */}
-      <div className="md:w-1/2 flex justify-center mb-8 md:mb-0">
-        <Image
-          src="/profile.jpg"
-          alt="Punit Chauhan"
-          width={350} // ~w-64
-          height={350} // ~h-64
-          className="rounded-4xl object-cover shadow-lg bg-[#dc2adc7d]"
-          priority // helps with faster LCP
-        />
+      {/* Hero Image with gradient/glow effect */}
+      <div className="md:w-1/2 flex justify-center mb-8 md:mb-0 relative">
+        <div className="rounded-4xl p-1 bg-gradient-to-r from-[#ebb2ff] to-[#ce85e9] shadow-[0_10px_20px_#5721557e] hover:scale-105 transition-transform">
+          <Image
+            src="/profile.png"
+            alt="Punit Chauhan"
+            width={350}
+            height={350}
+            className="rounded-4xl object-cover"
+            priority
+          />
+        </div>
       </div>
     </section>
   );
