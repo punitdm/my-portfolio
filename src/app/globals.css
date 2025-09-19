@@ -49,3 +49,7 @@ body {
 .nav-link {
   @apply transition text-white hover:text-[#ce85e9];
 }
+
+html {
+  scroll-behavior: smooth;
+}
