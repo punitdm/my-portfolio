@@ -57,37 +57,37 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modu
 ;
 function About() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "px-8 py-20 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12",
+        className: "px-6 sm:px-8 py-20 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "md:w-1/3 flex justify-center",
+                className: "w-full md:w-1/3 flex justify-center mb-6 md:mb-0",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                     src: "/about.jpg",
                     alt: "About Me",
-                    className: "w-64 h-64 rounded-2xl object-cover shadow-lg border-4 border-mainPurple"
+                    className: "w-48 sm:w-64 h-48 sm:h-64 rounded-2xl object-cover shadow-lg border-4 border-mainPurple"
                 }, void 0, false, {
                     fileName: "[project]/my-portfolio/src/components/About.js",
-                    lineNumber: 6,
+                    lineNumber: 7,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/my-portfolio/src/components/About.js",
-                lineNumber: 5,
+                lineNumber: 6,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "md:w-2/3 text-center md:text-left",
+                className: "w-full md:w-2/3 text-center md:text-left",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "text-4xl font-bold mb-6 text-mainPurple",
+                        className: "text-3xl sm:text-4xl font-bold mb-6 text-mainPurple",
                         children: "About Me"
                     }, void 0, false, {
                         fileName: "[project]/my-portfolio/src/components/About.js",
-                        lineNumber: 15,
+                        lineNumber: 16,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-lg mb-6 text-gray-200 leading-relaxed",
+                        className: "text-base sm:text-lg mb-6 text-gray-200 leading-relaxed",
                         children: [
                             "I’m a ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -95,7 +95,7 @@ function About() {
                                 children: "full-stack developer"
                             }, void 0, false, {
                                 fileName: "[project]/my-portfolio/src/components/About.js",
-                                lineNumber: 17,
+                                lineNumber: 18,
                                 columnNumber: 17
                             }, this),
                             " passionate about building modern web apps and helping businesses grow online. With hands-on experience in ",
@@ -104,30 +104,22 @@ function About() {
                                 children: "Next.js, TailwindCSS, and performance marketing"
                             }, void 0, false, {
                                 fileName: "[project]/my-portfolio/src/components/About.js",
-                                lineNumber: 19,
+                                lineNumber: 20,
                                 columnNumber: 39
                             }, this),
                             ", I bridge both technology and strategy to deliver results."
                         ]
                     }, void 0, true, {
                         fileName: "[project]/my-portfolio/src/components/About.js",
-                        lineNumber: 16,
+                        lineNumber: 17,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                        className: "grid grid-cols-2 gap-4 text-sm text-gray-300 mb-6",
+                        className: "grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-300 mb-6",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 className: "bg-[#2a1639] px-4 py-2 rounded-lg shadow",
                                 children: "⚡ Next.js / React"
-                            }, void 0, false, {
-                                fileName: "[project]/my-portfolio/src/components/About.js",
-                                lineNumber: 25,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                className: "bg-[#2a1639] px-4 py-2 rounded-lg shadow",
-                                children: "🎨 TailwindCSS"
                             }, void 0, false, {
                                 fileName: "[project]/my-portfolio/src/components/About.js",
                                 lineNumber: 26,
@@ -135,7 +127,7 @@ function About() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 className: "bg-[#2a1639] px-4 py-2 rounded-lg shadow",
-                                children: "🚀 Performance Marketing"
+                                children: "🎨 TailwindCSS"
                             }, void 0, false, {
                                 fileName: "[project]/my-portfolio/src/components/About.js",
                                 lineNumber: 27,
@@ -143,20 +135,28 @@ function About() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 className: "bg-[#2a1639] px-4 py-2 rounded-lg shadow",
-                                children: "📈 SEO & Analytics"
+                                children: "🚀 Performance Marketing"
                             }, void 0, false, {
                                 fileName: "[project]/my-portfolio/src/components/About.js",
                                 lineNumber: 28,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                className: "bg-[#2a1639] px-4 py-2 rounded-lg shadow",
+                                children: "📈 SEO & Analytics"
+                            }, void 0, false, {
+                                fileName: "[project]/my-portfolio/src/components/About.js",
+                                lineNumber: 29,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/my-portfolio/src/components/About.js",
-                        lineNumber: 24,
+                        lineNumber: 25,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex justify-center md:justify-start gap-4",
+                        className: "flex flex-col sm:flex-row justify-center md:justify-start gap-4",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "/resume.pdf",
@@ -164,7 +164,7 @@ function About() {
                                 children: "Download Resume"
                             }, void 0, false, {
                                 fileName: "[project]/my-portfolio/src/components/About.js",
-                                lineNumber: 33,
+                                lineNumber: 34,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -173,19 +173,19 @@ function About() {
                                 children: "Hire Me"
                             }, void 0, false, {
                                 fileName: "[project]/my-portfolio/src/components/About.js",
-                                lineNumber: 36,
+                                lineNumber: 37,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/my-portfolio/src/components/About.js",
-                        lineNumber: 32,
+                        lineNumber: 33,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/my-portfolio/src/components/About.js",
-                lineNumber: 14,
+                lineNumber: 15,
                 columnNumber: 7
             }, this)
         ]

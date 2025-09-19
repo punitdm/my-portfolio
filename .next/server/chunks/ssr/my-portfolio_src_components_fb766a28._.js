@@ -33,18 +33,18 @@ function Hero() {
         return ()=>clearInterval(interval);
     }, []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "relative flex flex-col-reverse md:flex-row items-center justify-between px-8 py-20 max-w-6xl mx-auto",
+        className: "relative flex flex-col-reverse md:flex-row items-center justify-between px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-20 max-w-6xl mx-auto",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$src$2f$components$2f$BackgroundIllustration$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/my-portfolio/src/components/Hero.js",
                 lineNumber: 26,
-                columnNumber: 11
+                columnNumber: 3
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "text-center md:text-left md:w-1/2",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                        className: "text-5xl mb-4",
+                        className: "text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-snug",
                         children: [
                             "Hi, I’m",
                             " ",
@@ -54,7 +54,7 @@ function Hero() {
                             }, void 0, false, {
                                 fileName: "[project]/my-portfolio/src/components/Hero.js",
                                 lineNumber: 32,
-                                columnNumber: 11
+                                columnNumber: 7
                             }, this),
                             ",",
                             " ",
@@ -81,85 +81,85 @@ function Hero() {
                                 }, roles[index], false, {
                                     fileName: "[project]/my-portfolio/src/components/Hero.js",
                                     lineNumber: 34,
-                                    columnNumber: 13
+                                    columnNumber: 9
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/my-portfolio/src/components/Hero.js",
                                 lineNumber: 33,
-                                columnNumber: 11
+                                columnNumber: 7
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/my-portfolio/src/components/Hero.js",
                         lineNumber: 30,
-                        columnNumber: 9
+                        columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-lg mb-6",
+                        className: "text-base sm:text-lg mb-6 max-w-lg mx-auto md:mx-0",
                         children: "with 3+ years experience driving revenue growth for ecommerce brands across 5+ countries. Specialized in running ROI-driven ad campaigns (Meta + Google), SEO strategies, and conversion-optimized Shopify/WordPress builds. Proven track record of managing 60+ projects that delivered measurable business results — not just traffic, but real sales and scale."
                     }, void 0, false, {
                         fileName: "[project]/my-portfolio/src/components/Hero.js",
                         lineNumber: 47,
-                        columnNumber: 9
+                        columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex justify-center md:justify-start gap-4",
+                        className: "flex flex-wrap justify-center md:justify-start gap-3 sm:gap-4",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "/resume.pdf",
-                                className: "btn-gradient rounded-lg",
+                                className: "btn-gradient rounded-lg px-4 py-2 text-sm sm:text-base",
                                 children: "Download Resume"
                             }, void 0, false, {
                                 fileName: "[project]/my-portfolio/src/components/Hero.js",
                                 lineNumber: 57,
-                                columnNumber: 11
+                                columnNumber: 7
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "#contact",
-                                className: "btn-gradient rounded-lg",
+                                className: "btn-gradient rounded-lg px-4 py-2 text-sm sm:text-base",
                                 children: "Hire Me"
                             }, void 0, false, {
                                 fileName: "[project]/my-portfolio/src/components/Hero.js",
                                 lineNumber: 60,
-                                columnNumber: 11
+                                columnNumber: 7
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/my-portfolio/src/components/Hero.js",
                         lineNumber: 56,
-                        columnNumber: 9
+                        columnNumber: 5
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/my-portfolio/src/components/Hero.js",
                 lineNumber: 29,
-                columnNumber: 7
+                columnNumber: 3
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "md:w-1/2 flex justify-center mb-8 md:mb-0 relative",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "rounded-4xl p-1 bg-gradient-to-r from-[#ebb2ff] to-[#ce85e9] shadow-[0_10px_20px_#5721557e] hover:scale-105 transition-transform",
+                    className: "rounded-3xl p-1 bg-gradient-to-r from-[#ebb2ff] to-[#ce85e9] shadow-[0_10px_20px_#5721557e] hover:scale-105 transition-transform",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                         src: "/profile.png",
                         alt: "Punit Chauhan",
-                        width: 350,
-                        height: 350,
-                        className: "rounded-4xl object-cover",
+                        width: 280,
+                        height: 280,
+                        className: "rounded-3xl object-cover w-40 sm:w-56 md:w-[350px] h-auto",
                         priority: true
                     }, void 0, false, {
                         fileName: "[project]/my-portfolio/src/components/Hero.js",
                         lineNumber: 69,
-                        columnNumber: 11
+                        columnNumber: 7
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/my-portfolio/src/components/Hero.js",
                     lineNumber: 68,
-                    columnNumber: 9
+                    columnNumber: 5
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/my-portfolio/src/components/Hero.js",
                 lineNumber: 67,
-                columnNumber: 7
+                columnNumber: 3
             }, this)
         ]
     }, void 0, true, {
@@ -205,120 +205,120 @@ function Services() {
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "services",
-        className: "relative max-w-6xl mx-auto px-6 md:px-8 py-20",
+        className: "relative max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-16 sm:py-20",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                className: "text-left text-xl text-[#ebb2ff] font-medium mb-2",
+                className: "text-left text-lg sm:text-xl text-[#ebb2ff] font-medium mb-2",
                 children: "- Services"
             }, void 0, false, {
                 fileName: "[project]/my-portfolio/src/components/Services.js",
-                lineNumber: 30,
+                lineNumber: 33,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex flex-col md:flex-row md:items-center md:justify-between mb-12",
+                className: "flex flex-col md:flex-row md:items-center md:justify-between mb-10 sm:mb-12",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "text-4xl md:text-5xl font-bold mb-6 md:mb-0",
+                        className: "text-3xl sm:text-4xl md:text-5xl font-bold mb-6 md:mb-0 leading-snug",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "font-serif",
                                 children: "Services"
                             }, void 0, false, {
                                 fileName: "[project]/my-portfolio/src/components/Services.js",
-                                lineNumber: 33,
+                                lineNumber: 38,
                                 columnNumber: 11
                             }, this),
                             " I Provide"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/my-portfolio/src/components/Services.js",
-                        lineNumber: 32,
+                        lineNumber: 37,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                         href: "/services",
-                        className: "btn-gradient rounded-lg px-6 py-3 text-base font-medium",
+                        className: "btn-gradient rounded-lg px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base font-medium",
                         children: "View All Services"
                     }, void 0, false, {
                         fileName: "[project]/my-portfolio/src/components/Services.js",
-                        lineNumber: 35,
+                        lineNumber: 40,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/my-portfolio/src/components/Services.js",
-                lineNumber: 31,
+                lineNumber: 36,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                className: "text-lg text-gray-400 max-w-2xl mb-16",
+                className: "text-base sm:text-lg text-gray-400 max-w-2xl mb-12 sm:mb-16",
                 children: "Helping ecommerce brands grow with performance marketing, optimized stores, and long-term traffic strategies."
             }, void 0, false, {
                 fileName: "[project]/my-portfolio/src/components/Services.js",
-                lineNumber: 40,
+                lineNumber: 48,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "grid gap-8 md:grid-cols-3",
+                className: "grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3",
                 children: services.map(({ title, description, icon: Icon }, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "group rounded-2xl bg-[#4241427d] backdrop-blur-md border border-white/10    p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2",
+                        className: "group rounded-2xl bg-[#4241427d] backdrop-blur-md border border-white/10    p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "mb-6 flex items-center justify-center w-16 h-16 rounded-xl bg-[#ebb2ff1a] group-hover:bg-[#ebb2ff2a] transition",
+                                className: "mb-5 sm:mb-6 flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-[#ebb2ff1a] group-hover:bg-[#ebb2ff2a] transition",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
-                                    className: "w-10 h-10 text-[#ebb2ff]"
+                                    className: "w-8 h-8 sm:w-10 sm:h-10 text-[#ebb2ff]"
                                 }, void 0, false, {
                                     fileName: "[project]/my-portfolio/src/components/Services.js",
-                                    lineNumber: 54,
+                                    lineNumber: 62,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/my-portfolio/src/components/Services.js",
-                                lineNumber: 53,
+                                lineNumber: 61,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                className: "text-2xl font-semibold mb-3",
+                                className: "text-xl sm:text-2xl font-semibold mb-2 sm:mb-3",
                                 children: title
                             }, void 0, false, {
                                 fileName: "[project]/my-portfolio/src/components/Services.js",
-                                lineNumber: 56,
+                                lineNumber: 64,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-gray-300 leading-relaxed",
+                                className: "text-gray-300 text-sm sm:text-base leading-relaxed",
                                 children: description
                             }, void 0, false, {
                                 fileName: "[project]/my-portfolio/src/components/Services.js",
-                                lineNumber: 57,
+                                lineNumber: 67,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, i, true, {
                         fileName: "[project]/my-portfolio/src/components/Services.js",
-                        lineNumber: 48,
+                        lineNumber: 56,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/my-portfolio/src/components/Services.js",
-                lineNumber: 46,
+                lineNumber: 54,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "text-center mt-20",
+                className: "text-center mt-16 sm:mt-20",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                     href: "#contact",
-                    className: "btn-gradient rounded-full px-10 py-4 text-lg font-semibold",
+                    className: "btn-gradient rounded-full px-8 sm:px-10 py-3.5 sm:py-4 text-base sm:text-lg font-semibold",
                     children: "Let’s Work Together"
                 }, void 0, false, {
                     fileName: "[project]/my-portfolio/src/components/Services.js",
-                    lineNumber: 64,
+                    lineNumber: 76,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/my-portfolio/src/components/Services.js",
-                lineNumber: 63,
+                lineNumber: 75,
                 columnNumber: 7
             }, this)
         ]
