@@ -27,7 +27,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="relative max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-16 sm:py-20"
+      className="relative max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-10 sm:py-20"
     >
       {/* Heading */}
       <p className="text-left text-lg sm:text-xl text-[#ebb2ff] font-medium mb-2">
@@ -45,7 +45,7 @@ export default function Services() {
         </Link>
       </div>
 
-      <p className="text-base sm:text-lg text-gray-400 max-w-2xl mb-12 sm:mb-16">
+      <p className="text-base sm:text-lg text-white max-w-2xl mb-12 sm:mb-16">
         Helping ecommerce brands grow with performance marketing, optimized
         stores, and long-term traffic strategies.
       </p>

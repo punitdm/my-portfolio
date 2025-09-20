@@ -41,7 +41,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="relative py-20 px-4 sm:px-6 md:px-8 max-w-6xl mx-auto"
+      className="relative py-10 px-4 sm:px-6 md:px-8 max-w-6xl mx-auto"
     >
       {/* Background */}
       <BackgroundIllustration />
