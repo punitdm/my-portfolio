@@ -29,7 +29,7 @@ export default function Metrics() {
     }
 
     requestAnimationFrame(animate);
-  }, []);
+  }, [metrics]);
 
   return (
     <section

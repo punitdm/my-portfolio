@@ -24,7 +24,6 @@ export default function WorkExperience() {
         "Built project delivery systems that improved client retention by 40%."
       ],
     },
-    // add more experiences if needed
   ];
 
   return (
@@ -39,7 +38,7 @@ export default function WorkExperience() {
         <p className="text-xl text-[#ebb2ff] font-medium mb-2">- Experience</p>
         <h2 className="text-4xl sm:text-5xl font-bold">Professional Background</h2>
         <p className="text-gray-300 mt-4 max-w-xl mx-auto">
-          Where I've applied my skills and delivered measurable results.
+          Where I&apos;ve applied my skills and delivered measurable results.
         </p>
       </div>
 
@@ -60,7 +59,7 @@ export default function WorkExperience() {
             <p className="text-gray-300 mb-2 font-medium">{exp.company}</p>
             <ul className="list-disc list-inside text-gray-300 text-sm sm:text-base">
               {exp.achievements.map((ach, i) => (
-                <li key={i} className="mb-1">{ach}</li>
+                <li key={i} className="mb-1">{ach.replace("'", "&apos;")}</li>
               ))}
             </ul>
           </motion.div>

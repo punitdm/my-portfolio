@@ -9,21 +9,21 @@ export default function Projects() {
       title: "Ecommerce Growth Campaign",
       tagline: "Problem → Low sales for a Shopify brand | Solution → Google & Meta Ads | Result → 3.5x ROAS",
       role: "Performance Marketing Strategist",
-      image: "/projects/ecommerce1. png", // replace with actual screenshot
+      image: "/ecommerce1.png", // replace with actual screenshot
       link: "https://www.feelingsexy.com.au",
     },
     {
       title: "Shopify Store Build",
       tagline: "Problem → Low conversion | Solution → Optimized store UX | Result → +30% checkout conversion",
       role: "Web Developer & CRO Specialist",
-      image: "/projects/shopify2.png",
+      image: "/shopify2.png",
       link: "https://liveproject2.com",
     },
     {
       title: "SEO Traffic Boost",
       tagline: "Problem → Low organic traffic | Solution → On-page & backlink strategy | Result → +180% traffic",
       role: "SEO & Analytics Lead",
-      image: "/projects/seo3.png",
+      image: "/seo3.png",
       link: "https://liveproject3.com",
     },
     // add more projects as needed (up to 6)

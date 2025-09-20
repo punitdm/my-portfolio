@@ -1,13 +1,17 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <section className="px-6 sm:px-8 py-20 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
       
       {/* Image */}
       <div className="w-full md:w-1/3 flex justify-center mb-6 md:mb-0">
-        <img
-          src="/about.jpg" // replace with your image
+        <Image
+          src="/about.jpg"
           alt="About Me"
-          className="w-48 sm:w-64 h-48 sm:h-64 rounded-2xl object-cover shadow-lg border-4 border-mainPurple"
+          width={256}   // adjust to your design
+          height={256}
+          className="w-64 h-64 rounded-2xl object-cover shadow-lg border-4 border-mainPurple"
         />
       </div>
 
