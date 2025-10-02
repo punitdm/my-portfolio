@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+/* ---------- Root Variables ---------- */
+:root {
+  --dark-purple: #190F24;     /* Background / Accent */
+  --main-purple: #472464;     /* Primary / Buttons */
+  --secondary-purple: #A173CC;/* Highlights */
+  --white: #FFFFFF;           /* Text / Background */
+  --gray: #B3B3B3;            /* Secondary Text */
+
+  --background: var(--white);
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist); /* ✅ connect to layout.js */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--dark-purple);
+    --foreground: var(--white);
+  }
+}
+
+/* ---------- Base Styles ---------- */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist), sans-serif; /* ✅ Geist Sans */
+}
+
+.btn-gradient {
+  @apply px-3 py-3 transition font-semibold
+         text-[#3f2748]
+         bg-gradient-to-r from-[#ebb2ff] to-[#ce85e9]
+         shadow-[0_10px_20px_#5721557e];
+  text-shadow: 0 0 5px #edc0fe;
+}
+
+.btn-gradient:hover {
+  @apply scale-105;
+  box-shadow: 0 15px 25px #5721559a;
+}
+
+/* Navbar Link */
+.nav-link {
+  @apply transition text-white hover:text-[#ce85e9];
+}
+
+html {
+  scroll-behavior: smooth;
+}

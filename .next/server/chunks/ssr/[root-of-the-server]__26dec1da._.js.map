@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///D:/dev/portoflio/my-portfolio/src/app/services/page.js"],"sourcesContent":["\r\nexport default function Services() {\r\n  return(\r\n    <h1>this is the services page</h1>\r\n  )\r\n}"],"names":[],"mappings":";;;;;;AACe,SAAS;IACtB,qBACE,8OAAC;kBAAG;;;;;;AAER","debugId":null}}]
+}
