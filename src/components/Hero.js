@@ -53,7 +53,7 @@ export default function Hero() {
     </p>
 
     <div className="flex flex-wrap justify-center md:justify-start gap-3 sm:gap-4">
-      <a href="/resume.pdf" className="btn-gradient rounded-lg px-4 py-2 text-sm sm:text-base">
+      <a href="/Punit-Chauhan-Performance-Marketing-CV.pdf" className="btn-gradient rounded-lg px-4 py-2 text-sm sm:text-base">
         Download Resume
       </a>
       <a href="#contact" className="btn-gradient rounded-lg px-4 py-2 text-sm sm:text-base">
