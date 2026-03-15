@@ -1,21 +1,21 @@
 {
   "pages": {
     "/_not-found/page": [
-      "static/chunks/node_modules_next_dist_8db7fb1f._.js",
-      "static/chunks/src_app_favicon_ico_mjs_243aa161._.js",
-      "static/chunks/[root-of-the-server]__faf548f3._.css",
-      "static/chunks/node_modules_97c7fd19._.js",
-      "static/chunks/src_components_a90855b2._.js",
-      "static/chunks/src_app_layout_0a548d63.js",
-      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_57d40746._.js",
-      "static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js",
-      "static/chunks/node_modules_next_dist_compiled_next-devtools_index_a9cb0712.js",
-      "static/chunks/node_modules_next_dist_compiled_5150ccfd._.js",
-      "static/chunks/node_modules_next_dist_client_cf1d9188._.js",
-      "static/chunks/node_modules_next_dist_b0daae9a._.js",
-      "static/chunks/node_modules_@swc_helpers_cjs_b3dc30d6._.js",
-      "static/chunks/_a0ff3932._.js",
-      "static/chunks/turbopack-_cdba956c._.js"
+      "static/chunks/42da1_next_dist_21d91dec._.js",
+      "static/chunks/07451_Development_Building_Portfolio_my-portfolio_src_app_favicon_ico_mjs_94b9360f._.js",
+      "static/chunks/[root-of-the-server]__e35fce81._.css",
+      "static/chunks/42da1_da705987._.js",
+      "static/chunks/97496_Chauhan_Development_Building_Portfolio_my-portfolio_src_components_5fa81516._.js",
+      "static/chunks/97496_Chauhan_Development_Building_Portfolio_my-portfolio_src_app_layout_801677c4.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_29a7642a._.js",
+      "static/chunks/42da1_next_dist_compiled_react-dom_ae005e4b._.js",
+      "static/chunks/42da1_next_dist_compiled_next-devtools_index_f0a60718.js",
+      "static/chunks/42da1_next_dist_compiled_17677855._.js",
+      "static/chunks/42da1_next_dist_client_f8efffa3._.js",
+      "static/chunks/42da1_next_dist_e35a2f1d._.js",
+      "static/chunks/42da1_@swc_helpers_cjs_89865195._.js",
+      "static/chunks/Punit_Chauhan_Development_Building_Portfolio_my-portfolio_a0ff3932._.js",
+      "static/chunks/turbopack-Punit_Chauhan_Development_Building_Portfolio_my-portfolio_02a1ef81._.js"
     ]
   }
 }
