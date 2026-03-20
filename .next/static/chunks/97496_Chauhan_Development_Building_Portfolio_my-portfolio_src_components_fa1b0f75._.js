@@ -11,19 +11,53 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development
 var __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Punit_Chauhan/Development/Building/Portfolio/my-portfolio/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Punit_Chauhan/Development/Building/Portfolio/my-portfolio/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Punit_Chauhan/Development/Building/Portfolio/my-portfolio/node_modules/next/image.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$instagram$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Instagram$3e$__ = __turbopack_context__.i("[project]/Punit_Chauhan/Development/Building/Portfolio/my-portfolio/node_modules/lucide-react/dist/esm/icons/instagram.js [app-client] (ecmascript) <export default as Instagram>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$linkedin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Linkedin$3e$__ = __turbopack_context__.i("[project]/Punit_Chauhan/Development/Building/Portfolio/my-portfolio/node_modules/lucide-react/dist/esm/icons/linkedin.js [app-client] (ecmascript) <export default as Linkedin>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__ = __turbopack_context__.i("[project]/Punit_Chauhan/Development/Building/Portfolio/my-portfolio/node_modules/lucide-react/dist/esm/icons/mail.js [app-client] (ecmascript) <export default as Mail>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__ = __turbopack_context__.i("[project]/Punit_Chauhan/Development/Building/Portfolio/my-portfolio/node_modules/lucide-react/dist/esm/icons/phone.js [app-client] (ecmascript) <export default as Phone>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageCircle$3e$__ = __turbopack_context__.i("[project]/Punit_Chauhan/Development/Building/Portfolio/my-portfolio/node_modules/lucide-react/dist/esm/icons/message-circle.js [app-client] (ecmascript) <export default as MessageCircle>");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
 ;
+;
+// Move constants outside (prevents unnecessary re-creation)
+const roles = [
+    "Performance Marketing Expert",
+    "Meta & Google Ads Expert",
+    "Shopify CRO Expert"
+];
+const socials = [
+    {
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$linkedin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Linkedin$3e$__["Linkedin"],
+        href: "https://www.linkedin.com/in/punit-chauhan-seo/",
+        label: "LinkedIn"
+    },
+    {
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$instagram$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Instagram$3e$__["Instagram"],
+        href: "https://www.instagram.com/punit.lostonpurpose/",
+        label: "Instagram"
+    },
+    {
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"],
+        href: "mailto:punidm1@gmail.com",
+        label: "Email"
+    },
+    {
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"],
+        href: "tel:+919871228046",
+        label: "Call"
+    },
+    {
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageCircle$3e$__["MessageCircle"],
+        href: "https://wa.me/919871228046",
+        label: "WhatsApp"
+    }
+];
 function Hero() {
     _s();
-    const roles = [
-        "Performance Marketing Specialist",
-        "Shopify CRO Expert",
-        "Meta & Google Ads Strategist"
-    ];
     const [index, setIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Hero.useEffect": ()=>{
@@ -38,9 +72,7 @@ function Hero() {
                 "Hero.useEffect": ()=>clearInterval(interval)
             })["Hero.useEffect"];
         }
-    }["Hero.useEffect"], [
-        roles.length
-    ]);
+    }["Hero.useEffect"], []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "relative flex flex-col-reverse md:flex-row items-center justify-between px-4 sm:px-6 md:px-8 py-10 sm:py-16 md:py-20 max-w-6xl mx-auto",
         children: [
@@ -50,14 +82,14 @@ function Hero() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                         className: "text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-snug",
                         children: [
-                            "Hi, I’m",
+                            "Hi, I am",
                             " ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "font-extrabold text-[#f3cbff]",
                                 children: "Punit Chauhan"
                             }, void 0, false, {
                                 fileName: "[project]/Punit_Chauhan/Development/Building/Portfolio/my-portfolio/src/components/Hero.js",
-                                lineNumber: 30,
+                                lineNumber: 68,
                                 columnNumber: 11
                             }, this),
                             ",",
@@ -78,32 +110,33 @@ function Hero() {
                                         opacity: 0
                                     },
                                     transition: {
-                                        duration: 0.6
+                                        duration: 0.5,
+                                        ease: "easeInOut"
                                     },
                                     className: "inline-block font-semibold text-white",
                                     children: roles[index]
                                 }, roles[index], false, {
                                     fileName: "[project]/Punit_Chauhan/Development/Building/Portfolio/my-portfolio/src/components/Hero.js",
-                                    lineNumber: 35,
+                                    lineNumber: 73,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Punit_Chauhan/Development/Building/Portfolio/my-portfolio/src/components/Hero.js",
-                                lineNumber: 34,
+                                lineNumber: 72,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Punit_Chauhan/Development/Building/Portfolio/my-portfolio/src/components/Hero.js",
-                        lineNumber: 28,
+                        lineNumber: 66,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "text-base sm:text-lg mb-6 max-w-lg mx-auto md:mx-0",
-                        children: "Performance Marketing Specialist with 3+ years of experience scaling ecommerce brands using ROI-focused ad strategies on Meta and Google. I manage $10K+ monthly ad spend, build high-converting Shopify stores, and implement retention systems using WhatsApp, email, and SMS automation to increase repeat purchases and customer lifetime value."
+                        children: "Scaled eCommerce brands to 3–5x ROAS managing $10K+ monthly ad spend across Meta & Google. I build high-converting Shopify stores and implement retention systems using WhatsApp, email, and SMS automation to increase repeat purchases and LTV."
                     }, void 0, false, {
                         fileName: "[project]/Punit_Chauhan/Development/Building/Portfolio/my-portfolio/src/components/Hero.js",
-                        lineNumber: 48,
+                        lineNumber: 86,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -112,10 +145,19 @@ function Hero() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "/Punit-Chauhan-Performance-Marketing-CV.pdf",
                                 className: "btn-gradient rounded-lg px-4 py-2 text-sm sm:text-base",
+                                download: true,
                                 children: "Download Resume"
                             }, void 0, false, {
                                 fileName: "[project]/Punit_Chauhan/Development/Building/Portfolio/my-portfolio/src/components/Hero.js",
-                                lineNumber: 57,
+                                lineNumber: 95,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "py-2 text-sm opacity-70",
+                                children: "Or"
+                            }, void 0, false, {
+                                fileName: "[project]/Punit_Chauhan/Development/Building/Portfolio/my-portfolio/src/components/Hero.js",
+                                lineNumber: 103,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -124,66 +166,110 @@ function Hero() {
                                 children: "Hire Me"
                             }, void 0, false, {
                                 fileName: "[project]/Punit_Chauhan/Development/Building/Portfolio/my-portfolio/src/components/Hero.js",
-                                lineNumber: 64,
+                                lineNumber: 105,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Punit_Chauhan/Development/Building/Portfolio/my-portfolio/src/components/Hero.js",
-                        lineNumber: 56,
+                        lineNumber: 94,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "mt-5",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                             className: "bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-sm",
-                            children: "🟢 Available for freelance projects"
+                            children: "Available for freelance projects"
                         }, void 0, false, {
                             fileName: "[project]/Punit_Chauhan/Development/Building/Portfolio/my-portfolio/src/components/Hero.js",
-                            lineNumber: 73,
+                            lineNumber: 114,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/Punit_Chauhan/Development/Building/Portfolio/my-portfolio/src/components/Hero.js",
-                        lineNumber: 72,
-                        columnNumber: 8
+                        lineNumber: 113,
+                        columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Punit_Chauhan/Development/Building/Portfolio/my-portfolio/src/components/Hero.js",
-                lineNumber: 26,
+                lineNumber: 64,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "md:w-1/2 flex justify-center mb-8 md:mb-0 relative",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "rounded-3xl p-1 bg-gradient-to-r from-[#ebb2ff] to-[#ce85e9] shadow-[0_10px_20px_#5721557e] hover:scale-105 transition-transform",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        src: "/profile2.png",
-                        alt: "Punit Chauhan",
-                        width: 350,
-                        height: 350,
-                        className: "rounded-3xl object-cover w-40 sm:w-56 md:w-[350px] h-auto",
-                        priority: true
+                className: "md:w-1/2 flex flex-col items-center gap-5 mb-8 md:mb-0",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "rounded-3xl p-1 bg-gradient-to-r from-[#ebb2ff] to-[#ce85e9] shadow-[0_10px_20px_#5721557e] hover:scale-105 transition-transform",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            src: "/profile2.png",
+                            alt: "Punit Chauhan",
+                            width: 350,
+                            height: 350,
+                            className: "rounded-3xl object-cover w-40 sm:w-56 md:w-[350px] h-auto",
+                            priority: true
+                        }, void 0, false, {
+                            fileName: "[project]/Punit_Chauhan/Development/Building/Portfolio/my-portfolio/src/components/Hero.js",
+                            lineNumber: 126,
+                            columnNumber: 11
+                        }, this)
                     }, void 0, false, {
                         fileName: "[project]/Punit_Chauhan/Development/Building/Portfolio/my-portfolio/src/components/Hero.js",
-                        lineNumber: 85,
-                        columnNumber: 11
+                        lineNumber: 125,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center gap-3",
+                        children: socials.map((param)=>{
+                            let { icon: Icon, href, label } = param;
+                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].a, {
+                                href: href,
+                                target: "_blank",
+                                rel: "noopener noreferrer",
+                                title: label,
+                                "aria-label": label,
+                                whileHover: {
+                                    scale: 1.15,
+                                    y: -3
+                                },
+                                whileTap: {
+                                    scale: 0.95
+                                },
+                                transition: {
+                                    type: "spring",
+                                    stiffness: 300,
+                                    damping: 15
+                                },
+                                className: "w-10 h-10 rounded-full flex items-center justify-center bg-white/10 border border-white/20 text-white hover:bg-[#ebb2ff]/20 hover:border-[#ebb2ff]/60 hover:text-[#f3cbff] transition-colors duration-200",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Punit_Chauhan$2f$Development$2f$Building$2f$Portfolio$2f$my$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
+                                    size: 18,
+                                    strokeWidth: 1.8
+                                }, void 0, false, {
+                                    fileName: "[project]/Punit_Chauhan/Development/Building/Portfolio/my-portfolio/src/components/Hero.js",
+                                    lineNumber: 151,
+                                    columnNumber: 15
+                                }, this)
+                            }, label, false, {
+                                fileName: "[project]/Punit_Chauhan/Development/Building/Portfolio/my-portfolio/src/components/Hero.js",
+                                lineNumber: 139,
+                                columnNumber: 13
+                            }, this);
+                        })
+                    }, void 0, false, {
+                        fileName: "[project]/Punit_Chauhan/Development/Building/Portfolio/my-portfolio/src/components/Hero.js",
+                        lineNumber: 137,
+                        columnNumber: 9
                     }, this)
-                }, void 0, false, {
-                    fileName: "[project]/Punit_Chauhan/Development/Building/Portfolio/my-portfolio/src/components/Hero.js",
-                    lineNumber: 83,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
+                ]
+            }, void 0, true, {
                 fileName: "[project]/Punit_Chauhan/Development/Building/Portfolio/my-portfolio/src/components/Hero.js",
-                lineNumber: 81,
+                lineNumber: 122,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Punit_Chauhan/Development/Building/Portfolio/my-portfolio/src/components/Hero.js",
-        lineNumber: 23,
+        lineNumber: 61,
         columnNumber: 5
     }, this);
 }
