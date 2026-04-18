@@ -8,10 +8,12 @@ import WorkExperience from "@/components/WorkExperience";
 import Education from "@/components/Education";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
+import SmoothScroll from "@/components/SmoothScroll";
 
 export default function Home() {
   return (
     <main>
+      <SmoothScroll>
       <section id="hero">
         <Hero />
       </section>
@@ -51,6 +53,7 @@ export default function Home() {
       <section id="about">
         <About />
       </section>
+      </SmoothScroll>
     </main>
   );
 }

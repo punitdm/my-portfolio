@@ -3,13 +3,8 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import {
-  Instagram,
-  Linkedin,
-  Mail,
-  Phone,
-  MessageCircle,
-} from "lucide-react";
+import { Mail, Phone} from "lucide-react";
+import { FaInstagram, FaLinkedin , FaWhatsapp} from "react-icons/fa";
 
 // Move constants outside (prevents unnecessary re-creation)
 const roles = [
@@ -20,12 +15,12 @@ const roles = [
 
 const socials = [
   {
-    icon: Linkedin,
+    icon: FaLinkedin,
     href: "https://www.linkedin.com/in/punit-chauhan-seo/",
     label: "LinkedIn",
   },
   {
-    icon: Instagram,
+    icon: FaInstagram,
     href: "https://www.instagram.com/punit.lostonpurpose/",
     label: "Instagram",
   },
@@ -40,7 +35,7 @@ const socials = [
     label: "Call",
   },
   {
-    icon: MessageCircle,
+    icon: FaWhatsapp,
     href: "https://wa.me/919871228046",
     label: "WhatsApp",
   },
