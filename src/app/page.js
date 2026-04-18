@@ -8,6 +8,7 @@ import WorkExperience from "@/components/WorkExperience";
 import Education from "@/components/Education";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
+import TechMarquee from "@/components/TechMarquee";
 import SmoothScroll from "@/components/SmoothScroll";
 
 export default function Home() {
@@ -21,6 +22,8 @@ export default function Home() {
       <section id="skills">
         <Skills />
       </section>
+
+      <TechMarquee />
 
       <section id="services">
         <Services />

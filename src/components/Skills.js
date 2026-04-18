@@ -45,10 +45,10 @@ export default function Skills() {
 
       {/* Content */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug text-white">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug">
           What I Do Best
         </h2>
-        <p className="text-gray-300 mt-4 max-w-2xl mx-auto">
+        <p className="mt-4 max-w-2xl mx-auto" style={{ color: "var(--text-secondary)" }}>
           Core skills and expertise I bring to every project
         </p>
       </div>
@@ -62,15 +62,15 @@ export default function Skills() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.15 }}
-            className="relative p-6 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 shadow-[0_10px_20px_#5721557e] hover:shadow-[0_15px_30px_#572155aa] hover:scale-105 transition-transform"
+            className="card-glass relative p-6 rounded-3xl shadow-[0_10px_20px_#5721557e] hover:shadow-[0_15px_30px_#572155aa] hover:scale-105 transition-transform"
           >
             <div className="flex items-center justify-center mb-4">
               {skill.icon}
             </div>
-            <h3 className="text-xl font-semibold text-white mb-2">
+            <h3 className="text-xl font-semibold mb-2">
               {skill.title}
             </h3>
-            <p className="text-gray-300 text-sm">{skill.desc}</p>
+            <p className="text-sm" style={{ color: "var(--text-secondary)" }}>{skill.desc}</p>
           </motion.div>
         ))}
       </div>

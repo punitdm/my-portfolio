@@ -45,7 +45,7 @@ export default function Services() {
         </Link>
       </div>
 
-      <p className="text-base sm:text-lg text-white max-w-2xl mb-12 sm:mb-16">
+      <p className="text-base sm:text-lg max-w-2xl mb-12 sm:mb-16" style={{ color: "var(--text-secondary)" }}>
         Helping ecommerce brands grow with performance marketing, optimized
         stores, and long-term traffic strategies.
       </p>
@@ -55,8 +55,7 @@ export default function Services() {
         {services.map(({ title, description, icon: Icon }, i) => (
           <div
             key={i}
-            className="group rounded-2xl bg-[#4241427d] backdrop-blur-md border border-white/10 
-                       p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+            className="card-glass group rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
           >
             <div className="mb-5 sm:mb-6 flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-[#ebb2ff1a] group-hover:bg-[#ebb2ff2a] transition">
               <Icon className="w-8 h-8 sm:w-10 sm:h-10 text-[#ebb2ff]" />
@@ -64,7 +63,7 @@ export default function Services() {
             <h3 className="text-xl sm:text-2xl font-semibold mb-2 sm:mb-3">
               {title}
             </h3>
-            <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
+            <p className="text-sm sm:text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
               {description}
             </p>
           </div>

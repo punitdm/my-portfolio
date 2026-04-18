@@ -35,7 +35,7 @@ export default function WorkExperience() {
       <div className="text-center mb-12">
         <p className="text-xl text-[#ebb2ff] font-medium mb-2">- Experience</p>
         <h2 className="text-4xl sm:text-5xl font-bold">Professional Background</h2>
-        <p className="text-gray-300 mt-4 max-w-xl mx-auto">
+        <p className="mt-4 max-w-xl mx-auto" style={{ color: "var(--text-secondary)" }}>
           Where I&apos;ve applied my skills and delivered measurable results.
         </p>
       </div>
@@ -45,17 +45,17 @@ export default function WorkExperience() {
         {experiences.map((exp, idx) => (
           <motion.div
             key={idx}
-            className="bg-[#4241427d] backdrop-blur-md border border-white/10 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300"
+            className="card-glass rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: idx * 0.2, duration: 0.6 }}
           >
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
               <h3 className="text-2xl font-semibold text-[#f3cbff]">{exp.role}</h3>
-              <span className="text-gray-400 italic">{exp.period}</span>
+              <span className="italic" style={{ color: "var(--text-muted)" }}>{exp.period}</span>
             </div>
-            <p className="text-gray-300 mb-2 font-medium">{exp.company}</p>
-            <ul className="list-disc list-inside text-gray-300 text-sm sm:text-base">
+            <p className="mb-2 font-medium" style={{ color: "var(--text-secondary)" }}>{exp.company}</p>
+            <ul className="list-disc list-inside text-sm sm:text-base" style={{ color: "var(--text-secondary)" }}>
               {exp.achievements.map((ach, i) => (
                 <li key={i} className="mb-1">{ach.replace("'", "&apos;")}</li>
               ))}

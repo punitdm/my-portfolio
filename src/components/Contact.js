@@ -29,7 +29,7 @@ export default function Contact() {
       <div className="text-center mb-12">
         <p className="text-xl text-[#ebb2ff] font-medium mb-2">- Contact</p>
         <h2 className="text-4xl sm:text-5xl font-bold">Let’s Grow Your Business Together</h2>
-        <p className="text-gray-300 mt-4 max-w-xl mx-auto">
+        <p className="mt-4 max-w-xl mx-auto" style={{ color: "var(--text-secondary)" }}>
           Reach out via email, LinkedIn, WhatsApp, or simply fill the form below.
         </p>
       </div>
@@ -70,7 +70,7 @@ export default function Contact() {
       {/* Contact Form */}
       <form
         onSubmit={handleSubmit}
-        className="w-full max-w-2xl flex flex-col gap-4 bg-[#4241427d] backdrop-blur-md border border-white/10 rounded-2xl p-6 shadow-lg"
+        className="card-glass w-full max-w-2xl flex flex-col gap-4 rounded-2xl p-6 shadow-lg"
       >
         {submitted && (
           <p className="text-green-400 font-semibold text-center">
@@ -84,7 +84,7 @@ export default function Contact() {
           value={form.name}
           onChange={handleChange}
           required
-          className="p-3 rounded-lg bg-[#2a1639] text-white placeholder-gray-400 border border-white/10 focus:outline-none focus:ring-2 focus:ring-[#ebb2ff]"
+          className="input-themed p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ebb2ff]"
         />
         <input
           type="email"
@@ -93,7 +93,7 @@ export default function Contact() {
           value={form.email}
           onChange={handleChange}
           required
-          className="p-3 rounded-lg bg-[#2a1639] text-white placeholder-gray-400 border border-white/10 focus:outline-none focus:ring-2 focus:ring-[#ebb2ff]"
+          className="input-themed p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ebb2ff]"
         />
         <textarea
           name="message"
@@ -102,7 +102,7 @@ export default function Contact() {
           onChange={handleChange}
           rows={5}
           required
-          className="p-3 rounded-lg bg-[#2a1639] text-white placeholder-gray-400 border border-white/10 focus:outline-none focus:ring-2 focus:ring-[#ebb2ff]"
+          className="input-themed p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ebb2ff]"
         ></textarea>
         <button
           type="submit"

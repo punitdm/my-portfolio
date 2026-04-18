@@ -71,14 +71,14 @@ export default function Hero() {
               animate={{ rotateX: 0, opacity: 1 }}
               exit={{ rotateX: -90, opacity: 0 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-              className="inline-block font-semibold text-white"
+              className="inline-block font-semibold"
             >
               {roles[index]}
             </motion.span>
           </AnimatePresence>
         </h1>
 
-        <p className="text-base sm:text-lg mb-6 max-w-lg mx-auto md:mx-0">
+        <p className="text-base sm:text-lg mb-6 max-w-lg mx-auto md:mx-0" style={{ color: "var(--text-secondary)" }}>
           Scaled eCommerce brands to 3–5x ROAS managing $10K+ monthly ad spend
           across Meta & Google. I build high-converting Shopify stores and
           implement retention systems using WhatsApp, email, and SMS automation
@@ -90,7 +90,8 @@ export default function Hero() {
           <a
             href="/Punit-Chauhan-Performance-Marketing-CV.pdf"
             className="btn-gradient rounded-lg px-4 py-2 text-sm sm:text-base"
-            download
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Download Resume
           </a>
@@ -105,9 +106,13 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="mt-5">
-          <span className="bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-sm">
-            Available for freelance projects
+        <div className="mt-5 flex items-center gap-2">
+          <span className="relative flex h-2.5 w-2.5">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
+            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500" />
+          </span>
+          <span className="bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-sm font-medium">
+            Open to Work · Available for freelance
           </span>
         </div>
 
@@ -141,7 +146,8 @@ export default function Hero() {
               whileHover={{ scale: 1.15, y: -3 }}
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 300, damping: 15 }}
-              className="w-10 h-10 rounded-full flex items-center justify-center bg-white/10 border border-white/20 text-white hover:bg-[#ebb2ff]/20 hover:border-[#ebb2ff]/60 hover:text-[#f3cbff] transition-colors duration-200"
+              className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-[#ebb2ff]/20 hover:border-[#ebb2ff]/60 hover:text-[#f3cbff] transition-colors duration-200"
+              style={{ background: "var(--icon-bg)", border: "1px solid var(--icon-border)", color: "var(--foreground)" }}
             >
               <Icon size={18} strokeWidth={1.8} />
             </motion.a>

@@ -3,6 +3,9 @@ import "./globals.css";
 import BackgroundIllustration from "@/components/BackgroundIllustration";
 import Navbar from "@/components/Navbar";
 import SmoothScroll from "@/components/SmoothScroll";
+import { ThemeProvider } from "@/components/ThemeProvider";
+import Preloader from "@/components/Preloader";
+import BackToTop from "@/components/BackToTop";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -18,13 +21,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="bg-darkPurple text-white font-sans">
-        <SmoothScroll>
-          {/* Background lives here globally */}
-          <BackgroundIllustration />
-          <Navbar />
-          <main>{children}</main>
-        </SmoothScroll>
+      <body className="font-sans" style={{ background: "var(--background)", color: "var(--foreground)" }}>
+        <ThemeProvider>
+          <Preloader />
+          <SmoothScroll>
+            <BackgroundIllustration />
+            <Navbar />
+            <main>{children}</main>
+          </SmoothScroll>
+          <BackToTop />
+        </ThemeProvider>
       </body>
     </html>
   );

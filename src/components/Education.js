@@ -36,7 +36,7 @@ export default function Education() {
       <div className="text-center mb-12">
         <p className="text-xl text-[#ebb2ff] font-medium mb-2">- Education</p>
         <h2 className="text-4xl sm:text-5xl font-bold">Education & Certifications</h2>
-        <p className="text-gray-300 mt-4 max-w-xl mx-auto">
+        <p className="mt-4 max-w-xl mx-auto" style={{ color: "var(--text-secondary)" }}>
           Relevant degrees, certifications, and professional development that validate my skills.
         </p>
       </div>
@@ -46,17 +46,17 @@ export default function Education() {
         {educationData.map((edu, idx) => (
           <motion.div
             key={idx}
-            className="bg-[#4241427d] backdrop-blur-md border border-white/10 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300"
+            className="card-glass rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: idx * 0.2, duration: 0.6 }}
           >
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
               <h3 className="text-2xl font-semibold text-[#f3cbff]">{edu.title}</h3>
-              <span className="text-gray-400 italic">{edu.period}</span>
+              <span className="italic" style={{ color: "var(--text-muted)" }}>{edu.period}</span>
             </div>
-            <p className="text-gray-300 mb-2 font-medium">{edu.institution}</p>
-            <ul className="list-disc list-inside text-gray-300 text-sm sm:text-base">
+            <p className="mb-2 font-medium" style={{ color: "var(--text-secondary)" }}>{edu.institution}</p>
+            <ul className="list-disc list-inside text-sm sm:text-base" style={{ color: "var(--text-secondary)" }}>
               {edu.notes.map((note, i) => (
                 <li key={i} className="mb-1">{note}</li>
               ))}
@@ -68,11 +68,12 @@ export default function Education() {
       {/* Certifications */}
       <div className="w-full max-w-3xl">
         <h3 className="text-2xl font-semibold text-[#f3cbff] mb-4">Certifications</h3>
-        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-300 text-sm sm:text-base">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm sm:text-base" style={{ color: "var(--text-secondary)" }}>
           {certifications.map((cert, i) => (
             <li
               key={i}
-              className="bg-[#2a1639] px-4 py-2 rounded-lg shadow hover:bg-[#3b1f52] transition"
+              className="px-4 py-2 rounded-lg shadow transition"
+              style={{ background: "var(--input-bg)", border: "1px solid var(--card-border)" }}
             >
               {cert}
             </li>

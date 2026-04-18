@@ -2,27 +2,56 @@
 
 /* ---------- Root Variables ---------- */
 :root {
-  --dark-purple: #190F24;     /* Background / Accent */
-  --main-purple: #472464;     /* Primary / Buttons */
-  --secondary-purple: #A173CC;/* Highlights */
-  --white: #FFFFFF;           /* Text / Background */
-  --gray: #B3B3B3;            /* Secondary Text */
+  --dark-purple: #190F24;
+  --main-purple: #472464;
+  --secondary-purple: #A173CC;
+  --white: #FFFFFF;
+  --gray: #B3B3B3;
 
-  --background: var(--white);
-  --foreground: #171717;
+  /* Dark mode (default) */
+  --background: #190F24;
+  --foreground: #ffffff;
+  --nav-bg: rgba(66, 65, 66, 0.49);
+  --nav-border: rgba(255, 255, 255, 0.2);
+  --nav-mobile-bg: rgba(66, 65, 66, 0.9);
+  --nav-link: #ffffff;
+  --nav-link-hover: #ce85e9;
+
+  /* Component tokens */
+  --text-secondary: rgba(209, 213, 219, 1);
+  --text-muted: rgba(156, 163, 175, 1);
+  --card-bg: rgba(66, 65, 66, 0.49);
+  --card-border: rgba(255, 255, 255, 0.1);
+  --input-bg: #2a1639;
+  --input-border: rgba(255, 255, 255, 0.12);
+  --icon-bg: rgba(255, 255, 255, 0.1);
+  --icon-border: rgba(255, 255, 255, 0.2);
+}
+
+html.light {
+  --background: #f5eeff;
+  --foreground: #190F24;
+  --nav-bg: rgba(240, 230, 255, 0.75);
+  --nav-border: rgba(71, 36, 100, 0.25);
+  --nav-mobile-bg: rgba(240, 230, 255, 0.97);
+  --nav-link: #190F24;
+  --nav-link-hover: #472464;
+
+  /* Component tokens */
+  --text-secondary: rgba(55, 65, 81, 1);
+  --text-muted: rgba(75, 85, 99, 1);
+  --card-bg: rgba(255, 255, 255, 0.7);
+  --card-border: rgba(71, 36, 100, 0.15);
+  --input-bg: rgba(240, 230, 255, 0.85);
+  --input-border: rgba(71, 36, 100, 0.2);
+  --icon-bg: rgba(71, 36, 100, 0.08);
+  --icon-border: rgba(71, 36, 100, 0.25);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist); /* ✅ connect to layout.js */
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: var(--dark-purple);
-    --foreground: var(--white);
-  }
+  --font-sans: var(--font-geist);
 }
 
 /* ---------- Base Styles ---------- */
@@ -45,11 +74,52 @@ body {
   box-shadow: 0 15px 25px #5721559a;
 }
 
+/* Themed glass card */
+.card-glass {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  backdrop-filter: blur(12px);
+}
+
+/* Themed input */
+.input-themed {
+  background: var(--input-bg);
+  color: var(--foreground);
+  border: 1px solid var(--input-border);
+}
+.input-themed::placeholder {
+  color: var(--text-muted);
+}
+
 /* Navbar Link */
 .nav-link {
-  @apply transition text-white hover:text-[#ce85e9];
+  @apply transition;
+  color: var(--nav-link);
+}
+.nav-link:hover {
+  color: var(--nav-link-hover);
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Marquee animations */
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes marquee-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+.animate-marquee-left {
+  animation: marquee-left 30s linear infinite;
+}
+.animate-marquee-right {
+  animation: marquee-right 30s linear infinite;
+}
+.marquee-wrapper:hover .animate-marquee-left,
+.marquee-wrapper:hover .animate-marquee-right {
+  animation-play-state: paused;
 }
