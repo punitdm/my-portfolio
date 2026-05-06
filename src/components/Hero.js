@@ -16,7 +16,7 @@ const roles = [
 const socials = [
   {
     icon: FaLinkedin,
-    href: "https://www.linkedin.com/in/punit-chauhan-seo/",
+    href: "https://www.linkedin.com/in/punit-chauhan-pm/",
     label: "LinkedIn",
   },
   {
