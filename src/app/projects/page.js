@@ -1,108 +1,94 @@
-import Image from "next/image";
 import Link from "next/link";
-import { projectsData } from "@/data/projects";
+import ProjectsGrid from "@/components/ProjectsGrid";
 
 export const metadata = {
   title: "Projects — Punit Chauhan",
   description: "Case studies in performance marketing, Shopify development, and SEO.",
 };
 
+const MARQUEE_ITEMS = [
+  "Performance Marketing",
+  "Meta Ads",
+  "Google Ads",
+  "Shopify Dev",
+  "SEO",
+  "CRO",
+  "Analytics",
+  "Email Marketing",
+  "Landing Pages",
+  "ROAS Growth",
+];
+
 export default function ProjectsPage() {
   return (
-    <main className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-16">
-
-      {/* Header */}
-      <div className="text-center mb-16">
-        <p className="text-xl text-[#ebb2ff] font-medium mb-2">- Portfolio</p>
-        <h1 className="text-4xl sm:text-5xl font-bold mb-4">Selected Work</h1>
-        <p className="max-w-xl mx-auto" style={{ color: "var(--text-secondary)" }}>
-          Deep-dive case studies across performance marketing, ecommerce development, and SEO strategies.
+    <main>
+      {/* ── Page Hero ── */}
+      <div className="text-center pt-16 pb-10 px-4">
+        <h1 className="text-5xl sm:text-6xl font-bold mb-3">Projects</h1>
+        <p style={{ color: "var(--text-muted)" }}>
+          <Link href="/" className="hover:text-[#ebb2ff] transition">
+            Home
+          </Link>{" "}
+          /{" "}
+          <span style={{ color: "var(--foreground)" }}>Projects</span>
         </p>
       </div>
 
-      {/* Projects Grid */}
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        {projectsData.map((project, idx) => (
-          <div
-            key={idx}
-            className="card-glass rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col"
-          >
-            {/* Image */}
-            <div className="relative w-full h-52">
-              <Image
-                src={project.image}
-                alt={project.title}
-                fill
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#190F24]/80 to-transparent" />
-              <span className="absolute top-3 right-3 text-xs px-2.5 py-1 rounded-full bg-[#ebb2ff]/20 border border-[#ebb2ff]/30 text-[#ebb2ff]">
-                {project.role}
-              </span>
-            </div>
-
-            {/* Content */}
-            <div className="p-5 flex flex-col gap-3 flex-1">
-              <h2 className="text-xl font-bold text-[#f3cbff]">{project.title}</h2>
-              <p className="text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
-                {project.tagline}
-              </p>
-
-              {/* Tool pills */}
-              <div className="flex flex-wrap gap-1.5 mt-1">
-                {project.tools.slice(0, 3).map((tool) => (
-                  <span
-                    key={tool}
-                    className="text-xs px-2 py-0.5 rounded-full bg-[#ebb2ff]/10 border border-[#ebb2ff]/20 text-[#ebb2ff]"
-                  >
-                    {tool}
-                  </span>
-                ))}
-                {project.tools.length > 3 && (
-                  <span className="text-xs px-2 py-0.5 rounded-full" style={{ color: "var(--text-muted)" }}>
-                    +{project.tools.length - 3} more
-                  </span>
-                )}
-              </div>
-
-              {/* Links */}
-              <div
-                className="mt-auto pt-3 flex items-center gap-4 border-t"
-                style={{ borderColor: "var(--card-border)" }}
-              >
-                <Link
-                  href={`/projects/${project.slug}`}
-                  className="text-sm text-[#ebb2ff] hover:text-[#f3cbff] font-medium hover:underline transition"
-                >
-                  View Case Study →
-                </Link>
-                {project.link && (
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm transition hover:text-[#f3cbff]"
-                    style={{ color: "var(--text-muted)" }}
-                  >
-                    Live Site ↗
-                  </a>
-                )}
-              </div>
-            </div>
-          </div>
-        ))}
+      {/* ── Category Marquee ── */}
+      <div
+        className="overflow-hidden border-y py-3 marquee-wrapper"
+        style={{ borderColor: "var(--card-border)", background: "var(--card-bg)" }}
+      >
+        <div className="flex animate-marquee-left whitespace-nowrap">
+          {[...MARQUEE_ITEMS, ...MARQUEE_ITEMS].map((item, i) => (
+            <span
+              key={i}
+              className="inline-flex items-center gap-3 px-6 text-sm font-semibold uppercase tracking-wider"
+              style={{ color: "var(--text-secondary)" }}
+            >
+              <span className="text-[#ebb2ff] text-base">✦</span>
+              {item}
+            </span>
+          ))}
+        </div>
       </div>
 
-      {/* CTA */}
-      <div className="mt-20 text-center card-glass rounded-2xl p-12">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-3">Have a Project in Mind?</h2>
-        <p className="mb-8 max-w-md mx-auto" style={{ color: "var(--text-secondary)" }}>
-          Let&apos;s build something that grows your brand and drives real, measurable results.
-        </p>
-        <a href="/#contact" className="btn-gradient rounded-full px-10 py-4 font-semibold text-lg">
-          Work With Me
+      {/* ── Projects Section ── */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-16">
+        {/* Section Header */}
+        <div className="text-center mb-10">
+          <p className="text-lg text-[#ebb2ff] font-medium mb-2">— My Portfolio</p>
+          <h2 className="text-4xl sm:text-5xl font-bold">
+            My Latest{" "}
+            <span className="text-[#ebb2ff]">Projects</span>
+          </h2>
+        </div>
+
+        {/* Interactive grid (client component) */}
+        <ProjectsGrid />
+      </section>
+
+      {/* ── CTA Banner ── */}
+      <section
+        className="py-20 px-4 text-center"
+        style={{ background: "var(--card-bg)", borderTop: "1px solid var(--card-border)" }}
+      >
+        <h2 className="text-3xl sm:text-4xl font-bold mb-8 leading-tight">
+          Let&apos;s Create an{" "}
+          <span className="text-[#ebb2ff]">Amazing</span>{" "}
+          <br className="hidden sm:block" />
+          <span className="text-[#ebb2ff]">Project</span> Together!
+        </h2>
+        <a
+          href="/#contact"
+          className="btn-gradient inline-flex items-center gap-2 rounded-full px-10 py-4 font-semibold text-lg"
+        >
+          Contact Us Now
+          <span className="w-7 h-7 rounded-full bg-[#3f2748]/30 flex items-center justify-center text-sm">
+            →
+          </span>
         </a>
-      </div>
+      </section>
     </main>
   );
 }

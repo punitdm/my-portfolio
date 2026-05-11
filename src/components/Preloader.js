@@ -27,14 +27,19 @@ export default function Preloader() {
           className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#190F24]"
         >
           <div className="flex flex-col items-center gap-6">
-            <motion.h1
+            <motion.div
               initial={{ scale: 0.5, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.5, ease: "backOut" }}
-              className="text-8xl font-extrabold bg-gradient-to-r from-[#ebb2ff] to-[#ce85e9] bg-clip-text text-transparent"
+              className="flex flex-col items-center gap-1"
             >
-              P
-            </motion.h1>
+              <h1 className="text-7xl font-extrabold bg-linear-to-r from-[#ebb2ff] to-[#ce85e9] bg-clip-text text-transparent">
+                Punit
+              </h1>
+              <p className="text-sm font-medium tracking-[0.25em] uppercase text-[#ebb2ff]/60">
+                Performance Marketing
+              </p>
+            </motion.div>
             <div className="w-40 h-0.5 bg-white/10 rounded-full overflow-hidden">
               <motion.div
                 initial={{ width: "0%" }}
