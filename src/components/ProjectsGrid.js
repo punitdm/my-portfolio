@@ -32,8 +32,8 @@ export default function ProjectsGrid() {
             }}
             className={`px-5 py-2 rounded-full text-sm font-semibold border transition-all duration-200 ${
               active === cat
-                ? "bg-[#ebb2ff] text-[#190F24] border-[#ebb2ff] shadow-[0_4px_14px_#ebb2ff55]"
-                : "border-[#ebb2ff]/30 text-[#ebb2ff] hover:bg-[#ebb2ff]/10"
+                ? "bg-accent text-ink border-accent shadow-[0_4px_14px_rgba(0,255,156,0.3)]"
+                : "border-accent/30 text-accent hover:bg-accent/10"
             }`}
           >
             {cat}
@@ -56,7 +56,7 @@ export default function ProjectsGrid() {
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#190F24]/70 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#040A14]/70 to-transparent" />
             </div>
 
             {/* Card Body */}
@@ -67,7 +67,7 @@ export default function ProjectsGrid() {
                   {project.categories?.map((tag) => (
                     <span
                       key={tag}
-                      className="text-xs px-3 py-1 rounded-full bg-[#ebb2ff]/10 border border-[#ebb2ff]/25 text-[#ebb2ff]"
+                      className="text-xs px-3 py-1 rounded-full bg-accent/10 border border-accent/25 text-accent"
                     >
                       {tag}
                     </span>
@@ -82,7 +82,7 @@ export default function ProjectsGrid() {
               {/* Arrow CTA */}
               <Link
                 href={`/projects/${project.slug}`}
-                className="flex-shrink-0 w-11 h-11 rounded-full bg-[#ebb2ff] flex items-center justify-center text-[#190F24] hover:scale-110 transition-transform shadow-[0_4px_14px_#ebb2ff55]"
+                className="flex-shrink-0 w-11 h-11 rounded-full bg-accent flex items-center justify-center text-ink hover:scale-110 transition-transform shadow-[0_4px_14px_rgba(0,255,156,0.3)]"
                 aria-label={`View case study for ${project.title}`}
               >
                 <ArrowUpRight className="w-5 h-5" />

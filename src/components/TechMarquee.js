@@ -49,7 +49,7 @@ export default function TechMarquee() {
   return (
     <section className="py-14 overflow-hidden">
       <div className="text-center mb-10 px-4">
-        <p className="text-xl text-[#ebb2ff] font-medium mb-2">- Tools & Platforms</p>
+        <p className="text-xl text-accent font-medium mb-2">- Tools & Platforms</p>
         <h2 className="text-3xl sm:text-4xl font-bold" style={{ color: "var(--foreground)" }}>
           My Tech Stack
         </h2>

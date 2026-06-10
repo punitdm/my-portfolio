@@ -30,7 +30,7 @@ export default function Services() {
       className="relative max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-10 sm:py-20"
     >
       {/* Heading */}
-      <p className="text-left text-lg sm:text-xl text-[#ebb2ff] font-medium mb-2">
+      <p className="text-left text-lg sm:text-xl text-accent font-medium mb-2">
         - Services
       </p>
       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-10 sm:mb-12">
@@ -57,8 +57,8 @@ export default function Services() {
             key={i}
             className="card-glass group rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
           >
-            <div className="mb-5 sm:mb-6 flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-[#ebb2ff1a] group-hover:bg-[#ebb2ff2a] transition">
-              <Icon className="w-8 h-8 sm:w-10 sm:h-10 text-[#ebb2ff]" />
+            <div className="mb-5 sm:mb-6 flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-accent/10 group-hover:bg-accent/15 transition">
+              <Icon className="w-8 h-8 sm:w-10 sm:h-10 text-accent" />
             </div>
             <h3 className="text-xl sm:text-2xl font-semibold mb-2 sm:mb-3">
               {title}

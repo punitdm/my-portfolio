@@ -11,27 +11,27 @@ import {
 export default function Skills() {
   const skills = [
     {
-      icon: <TrendingUp className="w-10 h-10 text-[#f3cbff]" />,
+      icon: <TrendingUp className="w-10 h-10 text-accent-bright" />,
       title: "Performance Marketing",
       desc: "Expert in Google & Meta Ads campaigns",
     },
     {
-      icon: <ShoppingBag className="w-10 h-10 text-[#f3cbff]" />,
+      icon: <ShoppingBag className="w-10 h-10 text-accent-bright" />,
       title: "Shopify / WordPress Development",
       desc: "Building and optimizing ecommerce stores",
     },
     {
-      icon: <BarChart3 className="w-10 h-10 text-[#f3cbff]" />,
+      icon: <BarChart3 className="w-10 h-10 text-accent-bright" />,
       title: "SEO & Analytics",
       desc: "Driving traffic and insights through data",
     },
     {
-      icon: <Target className="w-10 h-10 text-[#f3cbff]" />,
+      icon: <Target className="w-10 h-10 text-accent-bright" />,
       title: "Conversion Optimization",
       desc: "Turning visitors into paying customers",
     },
     {
-      icon: <FileText className="w-10 h-10 text-[#f3cbff]" />,
+      icon: <FileText className="w-10 h-10 text-accent-bright" />,
       title: "Content Strategy",
       desc: "Crafting engaging and impactful campaigns",
     },
@@ -62,7 +62,7 @@ export default function Skills() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.15 }}
-            className="card-glass relative p-6 rounded-3xl shadow-[0_10px_20px_#5721557e] hover:shadow-[0_15px_30px_#572155aa] hover:scale-105 transition-transform"
+            className="card-glass relative p-6 rounded-3xl shadow-[0_10px_20px_rgba(0,0,0,0.35)] hover:shadow-[0_15px_30px_rgba(0,255,156,0.2)] hover:scale-105 transition-transform"
           >
             <div className="flex items-center justify-center mb-4">
               {skill.icon}

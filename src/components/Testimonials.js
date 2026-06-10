@@ -31,7 +31,7 @@ export default function Testimonials() {
 
       {/* Heading */}
       <div className="text-center mb-12">
-        <p className="text-xl text-[#ebb2ff] font-medium mb-2">- Testimonials</p>
+        <p className="text-xl text-accent font-medium mb-2">- Testimonials</p>
         <h2 className="text-4xl sm:text-5xl font-bold">What People Say</h2>
         <p className="mt-4 max-w-xl mx-auto" style={{ color: "var(--text-secondary)" }}>
           Feedback from clients and colleagues highlighting results and collaboration.
@@ -45,11 +45,12 @@ export default function Testimonials() {
             key={idx}
             className="card-glass rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 flex-1"
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ delay: idx * 0.2, duration: 0.6 }}
           >
             <p className="italic mb-4" style={{ color: "var(--text-secondary)" }}>&quot;{t.quote}&quot;</p>
-            <p className="text-[#f3cbff] font-semibold">{t.name}</p>
+            <p className="text-accent-bright font-semibold">{t.name}</p>
             <p className="text-sm" style={{ color: "var(--text-muted)" }}>{t.designation}, {t.company}</p>
           </motion.div>
         ))}

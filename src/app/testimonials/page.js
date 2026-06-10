@@ -58,7 +58,7 @@ const stats = [
   { value: "60+", label: "Projects Completed" },
   { value: "35%+", label: "Average ROI Boost" },
   { value: "5+", label: "Countries Served" },
-  { value: "3+", label: "Years Experience" },
+  { value: "4+", label: "Years Experience" },
 ];
 
 export default function TestimonialsPage() {
@@ -67,7 +67,7 @@ export default function TestimonialsPage() {
 
       {/* Header */}
       <div className="text-center mb-16">
-        <p className="text-xl text-[#ebb2ff] font-medium mb-2">- Client Stories</p>
+        <p className="text-xl text-accent font-medium mb-2">- Client Stories</p>
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">What People Say</h1>
         <p className="max-w-xl mx-auto" style={{ color: "var(--text-secondary)" }}>
           Real results, real feedback — from founders, marketers, and growth teams across ecommerce brands.
@@ -78,7 +78,7 @@ export default function TestimonialsPage() {
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-16">
         {stats.map((s, i) => (
           <div key={i} className="card-glass rounded-2xl p-5 text-center">
-            <p className="text-3xl font-extrabold text-[#f3cbff]">{s.value}</p>
+            <p className="text-3xl font-extrabold text-accent-bright">{s.value}</p>
             <p className="text-sm mt-1" style={{ color: "var(--text-secondary)" }}>{s.label}</p>
           </div>
         ))}
@@ -96,7 +96,7 @@ export default function TestimonialsPage() {
             transition={{ delay: idx * 0.1, duration: 0.5 }}
           >
             {/* Quote icon */}
-            <Quote className="w-7 h-7 text-[#ebb2ff] opacity-60 shrink-0" />
+            <Quote className="w-7 h-7 text-accent opacity-60 shrink-0" />
 
             {/* Quote text */}
             <p className="text-sm leading-relaxed italic flex-1" style={{ color: "var(--text-secondary)" }}>
@@ -104,13 +104,13 @@ export default function TestimonialsPage() {
             </p>
 
             {/* Result badge */}
-            <span className="self-start text-xs px-3 py-1 rounded-full bg-[#ebb2ff]/10 border border-[#ebb2ff]/30 text-[#ebb2ff] font-medium">
+            <span className="self-start text-xs px-3 py-1 rounded-full bg-accent/10 border border-accent/30 text-accent font-medium">
               {t.result}
             </span>
 
             {/* Author */}
             <div className="border-t pt-4" style={{ borderColor: "var(--card-border)" }}>
-              <p className="font-semibold text-[#f3cbff]">{t.name}</p>
+              <p className="font-semibold text-accent-bright">{t.name}</p>
               <p className="text-xs mt-0.5" style={{ color: "var(--text-muted)" }}>
                 {t.designation}, {t.company}
               </p>
@@ -131,7 +131,7 @@ export default function TestimonialsPage() {
           </a>
           <Link
             href="/projects"
-            className="px-8 py-3.5 rounded-full font-semibold text-sm border transition hover:bg-[#ebb2ff]/10"
+            className="px-8 py-3.5 rounded-full font-semibold text-sm border transition hover:bg-accent/10"
             style={{ borderColor: "var(--card-border)", color: "var(--text-secondary)" }}
           >
             View Case Studies →

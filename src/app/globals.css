@@ -2,76 +2,106 @@
 
 /* ---------- Root Variables ---------- */
 :root {
-  --dark-purple: #190F24;
-  --main-purple: #472464;
-  --secondary-purple: #A173CC;
+  --black-deep: #040A14;
+  --navy-dark: #0A1628;
+  --navy-card: #0E1F38;
+  --neon: #00FF9C;
+  --neon-bright: #7DFFCB;
+  --electric: #00B8FF;
   --white: #FFFFFF;
   --gray: #B3B3B3;
 
   /* Dark mode (default) */
-  --background: #190F24;
-  --foreground: #ffffff;
-  --nav-bg: rgba(66, 65, 66, 0.49);
-  --nav-border: rgba(255, 255, 255, 0.2);
-  --nav-mobile-bg: rgba(66, 65, 66, 0.9);
-  --nav-link: #ffffff;
-  --nav-link-hover: #ce85e9;
+  --background: #040A14;
+  --foreground: #F2FBF7;
+  --nav-bg: rgba(10, 22, 40, 0.55);
+  --nav-border: rgba(0, 255, 156, 0.18);
+  --nav-mobile-bg: rgba(6, 14, 26, 0.95);
+  --nav-link: #F2FBF7;
+  --nav-link-hover: #00FF9C;
+
+  /* Accent tokens (theme-aware) */
+  --accent: #00FF9C;
+  --accent-bright: #7DFFCB;
+  --accent-2: #00B8FF;
+  --ink: #041018;
+  --glow: rgba(0, 255, 156, 0.25);
 
   /* Component tokens */
-  --text-secondary: rgba(209, 213, 219, 1);
-  --text-muted: rgba(156, 163, 175, 1);
-  --card-bg: rgba(66, 65, 66, 0.49);
-  --card-border: rgba(255, 255, 255, 0.1);
-  --input-bg: #2a1639;
-  --input-border: rgba(255, 255, 255, 0.12);
-  --icon-bg: rgba(255, 255, 255, 0.1);
-  --icon-border: rgba(255, 255, 255, 0.2);
+  --text-secondary: rgba(203, 222, 214, 1);
+  --text-muted: rgba(140, 165, 158, 1);
+  --card-bg: rgba(14, 31, 56, 0.55);
+  --card-border: rgba(0, 255, 156, 0.12);
+  --input-bg: #0C1A2E;
+  --input-border: rgba(0, 255, 156, 0.15);
+  --icon-bg: rgba(0, 255, 156, 0.08);
+  --icon-border: rgba(0, 255, 156, 0.25);
 }
 
 html.light {
-  --background: #f5eeff;
-  --foreground: #190F24;
-  --nav-bg: rgba(240, 230, 255, 0.75);
-  --nav-border: rgba(71, 36, 100, 0.25);
-  --nav-mobile-bg: rgba(240, 230, 255, 0.97);
-  --nav-link: #190F24;
-  --nav-link-hover: #472464;
+  --background: #F2F8F5;
+  --foreground: #04121C;
+  --nav-bg: rgba(255, 255, 255, 0.78);
+  --nav-border: rgba(4, 120, 87, 0.25);
+  --nav-mobile-bg: rgba(245, 252, 249, 0.97);
+  --nav-link: #04121C;
+  --nav-link-hover: #047857;
+
+  /* Accent tokens (theme-aware) */
+  --accent: #047857;
+  --accent-bright: #065F46;
+  --accent-2: #0369A1;
+  --ink: #FFFFFF;
+  --glow: rgba(4, 120, 87, 0.2);
 
   /* Component tokens */
-  --text-secondary: rgba(55, 65, 81, 1);
-  --text-muted: rgba(75, 85, 99, 1);
-  --card-bg: rgba(255, 255, 255, 0.7);
-  --card-border: rgba(71, 36, 100, 0.15);
-  --input-bg: rgba(240, 230, 255, 0.85);
-  --input-border: rgba(71, 36, 100, 0.2);
-  --icon-bg: rgba(71, 36, 100, 0.08);
-  --icon-border: rgba(71, 36, 100, 0.25);
+  --text-secondary: rgba(40, 60, 54, 1);
+  --text-muted: rgba(70, 95, 88, 1);
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --card-border: rgba(4, 120, 87, 0.18);
+  --input-bg: rgba(255, 255, 255, 0.9);
+  --input-border: rgba(4, 120, 87, 0.25);
+  --icon-bg: rgba(4, 120, 87, 0.08);
+  --icon-border: rgba(4, 120, 87, 0.3);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist);
+  --color-accent: var(--accent);
+  --color-accent-bright: var(--accent-bright);
+  --color-accent-2: var(--accent-2);
+  --color-ink: var(--ink);
+  --font-sans: var(--font-dm);
 }
 
 /* ---------- Base Styles ---------- */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist), sans-serif; /* ✅ Geist Sans */
+  font-family: var(--font-dm), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-space), var(--font-dm), sans-serif;
+  letter-spacing: -0.02em;
 }
 
 .btn-gradient {
-  @apply px-3 py-3 transition font-semibold
-         text-[#3f2748]
-         bg-gradient-to-r from-[#ebb2ff] to-[#ce85e9]
-         shadow-[0_10px_20px_#5721557e];
-  text-shadow: 0 0 5px #edc0fe;
+  @apply px-3 py-3 transition font-semibold cursor-pointer
+         text-[#041018]
+         bg-gradient-to-r from-[#00ff9c] to-[#00b8ff]
+         shadow-[0_10px_20px_rgba(0,255,156,0.25)];
 }
 
 .btn-gradient:hover {
   @apply scale-105;
-  box-shadow: 0 15px 25px #5721559a;
+  box-shadow: 0 15px 30px rgba(0, 255, 156, 0.4);
+}
+
+html.light .btn-gradient {
+  @apply bg-gradient-to-r from-[#047857] to-[#0369a1] text-white
+         shadow-[0_10px_20px_rgba(4,120,87,0.25)];
 }
 
 /* Themed glass card */
@@ -79,6 +109,33 @@ body {
   background: var(--card-bg);
   border: 1px solid var(--card-border);
   backdrop-filter: blur(12px);
+}
+
+/* Neon glow helpers */
+.glow-accent {
+  box-shadow: 0 0 24px var(--glow);
+}
+.glow-accent-hover {
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.glow-accent-hover:hover {
+  box-shadow: 0 0 32px var(--glow);
+  border-color: var(--accent);
+}
+
+/* Animated gradient text */
+.text-gradient-neon {
+  background: linear-gradient(90deg, var(--accent), var(--accent-2), var(--accent));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient-x 4s linear infinite;
+}
+
+@keyframes gradient-x {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
 }
 
 /* Themed input */
@@ -122,4 +179,45 @@ html {
 .marquee-wrapper:hover .animate-marquee-left,
 .marquee-wrapper:hover .animate-marquee-right {
   animation-play-state: paused;
+}
+
+/* Floating animation for decorative SVGs */
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+/* Pulsing neon ring */
+@keyframes pulse-ring {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.04); }
+}
+.animate-pulse-ring {
+  animation: pulse-ring 3s ease-in-out infinite;
+}
+
+/* Slow rotation for SVG rings */
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spin-slow 18s linear infinite;
+}
+
+/* Reduced motion: tone everything down */
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee-left,
+  .animate-marquee-right,
+  .animate-float-slow,
+  .animate-pulse-ring,
+  .animate-spin-slow,
+  .text-gradient-neon {
+    animation: none !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
 }

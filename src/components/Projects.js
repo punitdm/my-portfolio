@@ -15,7 +15,7 @@ export default function Projects() {
 
       {/* Heading */}
       <div className="text-center mb-12">
-        <p className="text-xl text-[#ebb2ff] font-medium mb-2">- Portfolio</p>
+        <p className="text-xl text-accent font-medium mb-2">- Portfolio</p>
         <h2 className="text-4xl sm:text-5xl font-bold">Selected Work</h2>
         <p className="mt-4 max-w-xl mx-auto" style={{ color: "var(--text-secondary)" }}>
           High-impact projects that demonstrate my skills in performance marketing, ecommerce development, and SEO strategies.
@@ -29,7 +29,8 @@ export default function Projects() {
             key={idx}
             className="card-glass rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ delay: idx * 0.2, duration: 0.6 }}
           >
             <div className="relative w-full h-48 sm:h-56 md:h-48">
@@ -41,13 +42,13 @@ export default function Projects() {
               />
             </div>
             <div className="p-4 flex flex-col gap-2">
-              <h3 className="text-2xl font-semibold text-[#f3cbff]">{project.title}</h3>
+              <h3 className="text-2xl font-semibold text-accent-bright">{project.title}</h3>
               <p className="text-sm" style={{ color: "var(--text-secondary)" }}>{project.tagline}</p>
               <p className="text-xs italic" style={{ color: "var(--text-muted)" }}>{project.role}</p>
               <div className="mt-3 flex items-center gap-4">
                 <Link
                   href={`/projects/${project.slug}`}
-                  className="text-sm text-[#ebb2ff] hover:text-[#f3cbff] font-medium hover:underline transition"
+                  className="text-sm text-accent hover:text-accent-bright font-medium hover:underline transition"
                 >
                   View Case Study →
                 </Link>

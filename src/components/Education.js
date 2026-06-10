@@ -34,7 +34,7 @@ export default function Education() {
 
       {/* Heading */}
       <div className="text-center mb-12">
-        <p className="text-xl text-[#ebb2ff] font-medium mb-2">- Education</p>
+        <p className="text-xl text-accent font-medium mb-2">- Education</p>
         <h2 className="text-4xl sm:text-5xl font-bold">Education & Certifications</h2>
         <p className="mt-4 max-w-xl mx-auto" style={{ color: "var(--text-secondary)" }}>
           Relevant degrees, certifications, and professional development that validate my skills.
@@ -48,11 +48,12 @@ export default function Education() {
             key={idx}
             className="card-glass rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300"
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ delay: idx * 0.2, duration: 0.6 }}
           >
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
-              <h3 className="text-2xl font-semibold text-[#f3cbff]">{edu.title}</h3>
+              <h3 className="text-2xl font-semibold text-accent-bright">{edu.title}</h3>
               <span className="italic" style={{ color: "var(--text-muted)" }}>{edu.period}</span>
             </div>
             <p className="mb-2 font-medium" style={{ color: "var(--text-secondary)" }}>{edu.institution}</p>
@@ -67,7 +68,7 @@ export default function Education() {
 
       {/* Certifications */}
       <div className="w-full max-w-3xl">
-        <h3 className="text-2xl font-semibold text-[#f3cbff] mb-4">Certifications</h3>
+        <h3 className="text-2xl font-semibold text-accent-bright mb-4">Certifications</h3>
         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm sm:text-base" style={{ color: "var(--text-secondary)" }}>
           {certifications.map((cert, i) => (
             <li

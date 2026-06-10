@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function NotFound() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center text-center px-6">
-      <h1 className="text-[140px] sm:text-[180px] font-extrabold leading-none bg-gradient-to-r from-[#ebb2ff] to-[#ce85e9] bg-clip-text text-transparent select-none">
+      <h1 className="text-[140px] sm:text-[180px] font-extrabold leading-none bg-gradient-to-r from-[#00ff9c] to-[#00b8ff] bg-clip-text text-transparent select-none">
         404
       </h1>
       <h2 className="text-2xl sm:text-3xl font-bold mt-2 mb-3" style={{ color: "var(--foreground)" }}>

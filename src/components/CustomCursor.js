@@ -25,13 +25,13 @@ export default function CustomCursor() {
           y: pos.y - (isPointer ? 20 : 16),
           width: isPointer ? 40 : 32,
           height: isPointer ? 40 : 32,
-          borderColor: isPointer ? "rgba(235,178,255,1)" : "rgba(235,178,255,0.5)",
-          backgroundColor: isPointer ? "rgba(235,178,255,0.08)" : "transparent",
+          borderColor: isPointer ? "rgba(0,255,156,1)" : "rgba(0,255,156,0.5)",
+          backgroundColor: isPointer ? "color-mix(in srgb, var(--accent) 8%, transparent)" : "transparent",
         }}
         transition={{ type: "spring", stiffness: 200, damping: 20, mass: 0.1 }}
       />
       <motion.div
-        className="fixed top-0 left-0 w-1.5 h-1.5 rounded-full bg-[#f3cbff] pointer-events-none z-[9998] hidden md:block"
+        className="fixed top-0 left-0 w-1.5 h-1.5 rounded-full bg-accent pointer-events-none z-[9998] hidden md:block"
         animate={{ x: pos.x - 3, y: pos.y - 3 }}
         transition={{ type: "spring", stiffness: 800, damping: 30 }}
       />

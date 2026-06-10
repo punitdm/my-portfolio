@@ -3,13 +3,13 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { Mail, Phone} from "lucide-react";
-import { FaInstagram, FaLinkedin , FaWhatsapp} from "react-icons/fa";
+import { Mail, Phone, TrendingUp, Wallet, Briefcase } from "lucide-react";
+import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 // Move constants outside (prevents unnecessary re-creation)
 const roles = [
   "Performance Marketing Expert",
-    "Meta & Google Ads Expert",
+  "Meta & Google Ads Expert",
   "Shopify CRO Expert",
 ];
 
@@ -41,6 +41,12 @@ const socials = [
   },
 ];
 
+const heroStats = [
+  { icon: TrendingUp, value: "3–5x", label: "Avg. ROAS" },
+  { icon: Wallet, value: "$10K+", label: "Monthly Ad Spend" },
+  { icon: Briefcase, value: "60+", label: "Projects Delivered" },
+];
+
 export default function Hero() {
   const [index, setIndex] = useState(0);
 
@@ -54,13 +60,13 @@ export default function Hero() {
 
   return (
     <section className="relative flex flex-col-reverse md:flex-row items-center justify-between px-4 sm:px-6 md:px-8 py-10 sm:py-16 md:py-20 max-w-6xl mx-auto">
-      
+
       {/* Content */}
       <div className="text-center md:text-left md:w-1/2">
-        
+
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-snug">
           Hi, I am{" "}
-          <span className="font-extrabold text-[#f3cbff]">
+          <span className="font-extrabold text-gradient-neon">
             Punit Chauhan
           </span>
           ,{" "}
@@ -85,6 +91,25 @@ export default function Hero() {
           to increase repeat purchases and LTV.
         </p>
 
+        {/* Quick stats */}
+        <div className="flex flex-wrap justify-center md:justify-start gap-3 mb-7">
+          {heroStats.map(({ icon: Icon, value, label }, i) => (
+            <motion.div
+              key={label}
+              initial={{ opacity: 0, y: 14 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 + i * 0.15, duration: 0.5 }}
+              className="card-glass glow-accent-hover flex items-center gap-2.5 rounded-xl px-4 py-2.5"
+            >
+              <Icon className="w-5 h-5 text-accent" strokeWidth={2} />
+              <div className="text-left">
+                <p className="text-base font-bold leading-tight text-accent-bright">{value}</p>
+                <p className="text-[11px] leading-tight" style={{ color: "var(--text-muted)" }}>{label}</p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
         {/* Buttons */}
         <div className="flex flex-wrap justify-center md:justify-start gap-3 sm:gap-4">
           <a
@@ -106,7 +131,7 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="mt-5 flex items-center gap-2">
+        <div className="mt-5 flex items-center gap-2 justify-center md:justify-start">
           <span className="relative flex h-2.5 w-2.5">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
             <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500" />
@@ -122,15 +147,17 @@ export default function Hero() {
       <div className="md:w-1/2 flex flex-col items-center gap-5 mb-8 md:mb-0">
 
         {/* Photo */}
-        <div className="rounded-3xl p-1 bg-gradient-to-r from-[#ebb2ff] to-[#ce85e9] shadow-[0_10px_20px_#5721557e] hover:scale-105 transition-transform">
-          <Image
-            src="/profile2.png"
-            alt="Punit Chauhan"
-            width={350}
-            height={350}
-            className="rounded-3xl object-cover w-40 sm:w-56 md:w-[350px] h-auto"
-            priority
-          />
+        <div className="relative">
+          <div className="rounded-3xl p-1 bg-gradient-to-r from-[#00ff9c] to-[#00b8ff] shadow-[0_10px_30px_rgba(0,255,156,0.25)] hover:scale-105 transition-transform">
+            <Image
+              src="/profile2.png"
+              alt="Punit Chauhan"
+              width={350}
+              height={350}
+              className="rounded-3xl object-cover w-40 sm:w-56 md:w-[350px] h-auto"
+              priority
+            />
+          </div>
         </div>
 
         {/* Social Icons */}
@@ -146,7 +173,7 @@ export default function Hero() {
               whileHover={{ scale: 1.15, y: -3 }}
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 300, damping: 15 }}
-              className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-[#ebb2ff]/20 hover:border-[#ebb2ff]/60 hover:text-[#f3cbff] transition-colors duration-200"
+              className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-accent/20 hover:border-accent/60 hover:text-accent transition-colors duration-200"
               style={{ background: "var(--icon-bg)", border: "1px solid var(--icon-border)", color: "var(--foreground)" }}
             >
               <Icon size={18} strokeWidth={1.8} />

@@ -27,7 +27,7 @@ export default function Contact() {
 
       {/* Heading */}
       <div className="text-center mb-12">
-        <p className="text-xl text-[#ebb2ff] font-medium mb-2">- Contact</p>
+        <p className="text-xl text-accent font-medium mb-2">- Contact</p>
         <h2 className="text-4xl sm:text-5xl font-bold">Let’s Grow Your Business Together</h2>
         <p className="mt-4 max-w-xl mx-auto" style={{ color: "var(--text-secondary)" }}>
           Reach out via email, LinkedIn, WhatsApp, or simply fill the form below.
@@ -39,9 +39,9 @@ export default function Contact() {
     <div className="flex flex-col items-center md:items-start">
   <a
     href="mailto:punitdm1@gmail.com"
-    className="flex items-center gap-2 text-lg font-semibold text-[#f3cbff] hover:text-[#ebb2ff]"
+    className="flex items-center gap-2 text-lg font-semibold text-accent-bright hover:text-accent"
   >
-    <MdEmail className="text-[#ebb2ff] text-2xl" /> Email
+    <MdEmail className="text-accent text-2xl" /> Email
   </a>
 </div>
 
@@ -50,9 +50,9 @@ export default function Contact() {
     href="https://www.linkedin.com/in/punit-chauhan-seo/"
     target="_blank"
     rel="noopener noreferrer"
-    className="flex items-center gap-2 text-lg font-semibold text-[#f3cbff] hover:text-[#ebb2ff]"
+    className="flex items-center gap-2 text-lg font-semibold text-accent-bright hover:text-accent"
   >
-    <FaLinkedin className="text-[#ebb2ff] text-2xl" /> Connect Now
+    <FaLinkedin className="text-accent text-2xl" /> Connect Now
   </a>
 </div>
 
@@ -61,9 +61,9 @@ export default function Contact() {
     href="https://wa.me/919871228046"
     target="_blank"
     rel="noopener noreferrer"
-    className="flex items-center gap-2 text-lg font-semibold text-[#f3cbff] hover:text-[#ebb2ff]"
+    className="flex items-center gap-2 text-lg font-semibold text-accent-bright hover:text-accent"
   >
-    <FaWhatsapp className="text-[#ebb2ff] text-2xl" /> Chat Now
+    <FaWhatsapp className="text-accent text-2xl" /> Chat Now
   </a>
 </div>
     </div>
@@ -84,7 +84,7 @@ export default function Contact() {
           value={form.name}
           onChange={handleChange}
           required
-          className="input-themed p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ebb2ff]"
+          className="input-themed p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent"
         />
         <input
           type="email"
@@ -93,7 +93,7 @@ export default function Contact() {
           value={form.email}
           onChange={handleChange}
           required
-          className="input-themed p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ebb2ff]"
+          className="input-themed p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent"
         />
         <textarea
           name="message"
@@ -102,7 +102,7 @@ export default function Contact() {
           onChange={handleChange}
           rows={5}
           required
-          className="input-themed p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ebb2ff]"
+          className="input-themed p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent"
         ></textarea>
         <button
           type="submit"

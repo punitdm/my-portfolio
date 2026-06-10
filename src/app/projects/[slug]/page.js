@@ -28,7 +28,7 @@ export default async function CaseStudyPage({ params }) {
       {/* Back */}
       <Link
         href="/projects"
-        className="inline-flex items-center gap-2 text-[#ebb2ff] hover:text-[#f3cbff] mb-8 transition text-sm"
+        className="inline-flex items-center gap-2 text-accent hover:text-accent-bright mb-8 transition text-sm"
       >
         <ArrowLeft className="w-4 h-4" /> Back to Projects
       </Link>
@@ -36,9 +36,9 @@ export default async function CaseStudyPage({ params }) {
       {/* Hero image */}
       <div className="relative w-full h-64 sm:h-80 rounded-2xl overflow-hidden mb-10" style={{ border: "1px solid var(--card-border)" }}>
         <Image src={project.image} alt={project.title} fill className="object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#190F24] via-[#190F2466] to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#040A14] via-[#040a1466] to-transparent" />
         <div className="absolute bottom-6 left-6">
-          <p className="text-[#ebb2ff] text-sm font-medium mb-1">{project.role}</p>
+          <p className="text-accent text-sm font-medium mb-1">{project.role}</p>
           <h1 className="text-2xl sm:text-4xl font-extrabold text-white">{project.title}</h1>
         </div>
       </div>
@@ -51,7 +51,7 @@ export default async function CaseStudyPage({ params }) {
           { label: "Budget", value: project.budget },
         ].map(({ label, value }) => (
           <div key={label} className="card-glass rounded-xl px-4 py-2 text-sm">
-            <span className="text-[#ebb2ff] font-medium">{label}: </span>
+            <span className="text-accent font-medium">{label}: </span>
             <span className="text-white">{value}</span>
           </div>
         ))}
@@ -75,18 +75,18 @@ export default async function CaseStudyPage({ params }) {
           { title: "The Solution", content: project.solution },
         ].map(({ title, content }) => (
           <div key={title} className="card-glass rounded-2xl p-6">
-            <h2 className="text-lg font-bold text-[#f3cbff] mb-3">{title}</h2>
+            <h2 className="text-lg font-bold text-accent-bright mb-3">{title}</h2>
             <p className="leading-relaxed" style={{ color: "var(--text-secondary)" }}>{content}</p>
           </div>
         ))}
 
         {/* Results */}
         <div className="card-glass rounded-2xl p-6">
-          <h2 className="text-lg font-bold text-[#f3cbff] mb-4">Results</h2>
+          <h2 className="text-lg font-bold text-accent-bright mb-4">Results</h2>
           <ul className="flex flex-col gap-3">
             {project.results.map((r, i) => (
               <li key={i} className="flex items-start gap-3">
-                <span className="w-2 h-2 rounded-full bg-[#ebb2ff] mt-2 shrink-0" />
+                <span className="w-2 h-2 rounded-full bg-accent mt-2 shrink-0" />
                 <span className="font-medium">{r}</span>
               </li>
             ))}
@@ -95,12 +95,12 @@ export default async function CaseStudyPage({ params }) {
 
         {/* Tools */}
         <div className="card-glass rounded-2xl p-6">
-          <h2 className="text-lg font-bold text-[#f3cbff] mb-4">Tools Used</h2>
+          <h2 className="text-lg font-bold text-accent-bright mb-4">Tools Used</h2>
           <div className="flex flex-wrap gap-2">
             {project.tools.map((tool) => (
               <span
                 key={tool}
-                className="px-3 py-1 rounded-full text-sm bg-[#ebb2ff]/10 border border-[#ebb2ff]/30 text-[#ebb2ff]"
+                className="px-3 py-1 rounded-full text-sm bg-accent/10 border border-accent/30 text-accent"
               >
                 {tool}
               </span>

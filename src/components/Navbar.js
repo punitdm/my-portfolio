@@ -1,94 +1,181 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, Sun, Moon } from "lucide-react";
+import { usePathname } from "next/navigation";
+import { motion, AnimatePresence } from "framer-motion";
+import { Sun, Moon, X, Menu } from "lucide-react";
 import { useTheme } from "./ThemeProvider";
 
+const NAV_LINKS = [
+  { label: "Home",         href: "/"             },
+  { label: "Services",     href: "/services"      },
+  { label: "About",        href: "/about"         },
+  { label: "Projects",     href: "/projects"      },
+  { label: "Testimonials", href: "/testimonials"  },
+];
+
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [open, setOpen]       = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const { theme, toggleTheme } = useTheme();
+  const pathname               = usePathname();
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => { setOpen(false); }, [pathname]);
 
   return (
-    <nav
-      className="sticky top-2 mx-auto w-11/12 sm:w-4/5 flex items-center justify-between
-                 px-4 py-3 backdrop-blur-md rounded-full shadow-lg z-50"
-      style={{
-        background: "var(--nav-bg)",
-        border: "1px solid var(--nav-border)",
-      }}
-    >
-      {/* Logo */}
-      <h1 className="text-xl sm:text-2xl font-bold">
-        <Link href="/" className="nav-link">Punit</Link>
-      </h1>
+    <>
+      <nav
+        className="sticky top-3 z-50 mx-auto w-11/12 sm:w-4/5 flex items-center justify-between
+                   px-5 py-3 rounded-full backdrop-blur-md transition-shadow duration-300"
+        style={{
+          background: "var(--nav-bg)",
+          border: "1px solid var(--nav-border)",
+          boxShadow: scrolled ? "0 8px 32px rgba(0,0,0,0.25)" : "none",
+        }}
+      >
+        {/* Logo */}
+        <Link href="/" className="text-xl sm:text-2xl font-bold nav-link tracking-tight">
+          Punit
+        </Link>
 
-      {/* Desktop Menu */}
-      <ul className="hidden md:flex gap-8 text-base lg:text-lg">
-        <li><Link href="/" className="nav-link">Home</Link></li>
-        <li><Link href="/services" className="nav-link">Services</Link></li>
-        <li><Link href="/about" className="nav-link">About</Link></li>
-        <li><Link href="/projects" className="nav-link">Projects</Link></li>
-        <li><Link href="/testimonials" className="nav-link">Testimonials</Link></li>
-      </ul>
+        {/* Desktop links */}
+        <ul className="hidden md:flex items-center gap-1">
+          {NAV_LINKS.map(({ label, href }) => {
+            const active = pathname === href;
+            return (
+              <li key={href}>
+                <Link
+                  href={href}
+                  className="relative px-4 py-2 text-sm font-medium rounded-full transition-colors duration-200 nav-link"
+                  style={active ? { color: "var(--accent)" } : {}}
+                >
+                  {label}
+                  {active && (
+                    <motion.span
+                      layoutId="nav-pill"
+                      className="absolute inset-0 rounded-full -z-10"
+                      style={{ background: "color-mix(in srgb, var(--accent) 12%, transparent)" }}
+                      transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                    />
+                  )}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
 
-      {/* Right side: Theme toggle + Contact CTA */}
-      <div className="hidden md:flex items-center gap-3">
-        <button
-          onClick={toggleTheme}
-          className="p-2 rounded-full transition hover:scale-110"
-          style={{ color: "var(--nav-link)" }}
-          aria-label="Toggle theme"
-        >
-          {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-        </button>
-        <a href="#contact" className="btn-gradient rounded-full px-5 py-2 text-sm lg:text-base">
-          Contact Me
-        </a>
-      </div>
+        {/* Right: theme + CTA */}
+        <div className="flex items-center gap-2">
+          <button
+            onClick={toggleTheme}
+            aria-label="Toggle theme"
+            className="p-2 rounded-full transition hover:scale-110"
+            style={{ color: "var(--nav-link)" }}
+          >
+            {theme === "dark" ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+          </button>
 
-      {/* Mobile: Theme toggle + Hamburger */}
-      <div className="md:hidden flex items-center gap-2">
-        <button
-          onClick={toggleTheme}
-          className="p-2 rounded-full transition hover:scale-110"
-          style={{ color: "var(--nav-link)" }}
-          aria-label="Toggle theme"
-        >
-          {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-        </button>
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-[#ebb2ff]"
-          style={{ color: "var(--nav-link)" }}
-        >
-          {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
-      </div>
-
-      {/* Mobile Menu Dropdown */}
-      {isOpen && (
-        <div
-          className="absolute top-16 left-1/2 -translate-x-1/2 w-11/12 sm:w-4/5
-                     backdrop-blur-md rounded-2xl shadow-lg p-6 flex flex-col gap-6 text-center md:hidden"
-          style={{
-            background: "var(--nav-mobile-bg)",
-            border: "1px solid var(--nav-border)",
-          }}
-        >
-          <Link href="/" className="nav-link" onClick={() => setIsOpen(false)}>Home</Link>
-          <Link href="/services" className="nav-link" onClick={() => setIsOpen(false)}>Services</Link>
-          <Link href="/about" className="nav-link" onClick={() => setIsOpen(false)}>About</Link>
-          <Link href="/projects" className="nav-link" onClick={() => setIsOpen(false)}>Projects</Link>
-          <Link href="/testimonials" className="nav-link" onClick={() => setIsOpen(false)}>Testimonials</Link>
           <a
-            href="#contact"
-            className="btn-gradient rounded-full py-2 px-6 text-sm font-medium"
-            onClick={() => setIsOpen(false)}
+            href="/#contact"
+            className="hidden md:inline-flex btn-gradient rounded-full px-5 py-2 text-sm font-semibold"
           >
             Contact Me
           </a>
+
+          {/* Hamburger (mobile) */}
+          <button
+            onClick={() => setOpen((v) => !v)}
+            aria-label="Toggle menu"
+            className="md:hidden p-2 rounded-full transition hover:scale-110"
+            style={{ color: "var(--nav-link)" }}
+          >
+            <Menu className="w-5 h-5" />
+          </button>
         </div>
-      )}
-    </nav>
+      </nav>
+
+      {/* Mobile full-screen overlay */}
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            key="mobile-menu"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25 }}
+            className="fixed inset-0 z-100 flex flex-col md:hidden"
+            style={{ background: "var(--background)" }}
+          >
+            {/* Top bar */}
+            <div className="flex items-center justify-between px-6 pt-6 pb-4">
+              <Link href="/" className="text-2xl font-bold nav-link" onClick={() => setOpen(false)}>
+                Punit
+              </Link>
+              <button
+                onClick={() => setOpen(false)}
+                aria-label="Close menu"
+                className="p-2 rounded-full"
+                style={{ color: "var(--nav-link)" }}
+              >
+                <X className="w-6 h-6" />
+              </button>
+            </div>
+
+            {/* Divider */}
+            <div className="mx-6 h-px" style={{ background: "var(--card-border)" }} />
+
+            {/* Links */}
+            <nav className="flex flex-col gap-1 px-4 pt-6 flex-1">
+              {NAV_LINKS.map(({ label, href }, i) => (
+                <motion.div
+                  key={href}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: i * 0.07, duration: 0.3, ease: "easeOut" }}
+                >
+                  <Link
+                    href={href}
+                    onClick={() => setOpen(false)}
+                    className="flex items-center justify-between px-4 py-4 rounded-2xl text-xl font-semibold transition-colors duration-150"
+                    style={{
+                      color: pathname === href ? "var(--accent)" : "var(--foreground)",
+                      background: pathname === href ? "color-mix(in srgb, var(--accent) 8%, transparent)" : "transparent",
+                    }}
+                  >
+                    {label}
+                    {pathname === href && (
+                      <span className="w-2 h-2 rounded-full bg-accent" />
+                    )}
+                  </Link>
+                </motion.div>
+              ))}
+            </nav>
+
+            {/* Bottom CTA */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4, duration: 0.3 }}
+              className="px-6 pb-10 pt-4 flex flex-col gap-3"
+            >
+              <div className="h-px mb-2" style={{ background: "var(--card-border)" }} />
+              <a
+                href="/#contact"
+                onClick={() => setOpen(false)}
+                className="btn-gradient rounded-full py-3.5 text-center font-semibold text-base"
+              >
+                Contact Me
+              </a>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   );
 }

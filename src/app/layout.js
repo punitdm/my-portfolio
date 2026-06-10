@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google";
+import { Space_Grotesk, DM_Sans } from "next/font/google";
 import "./globals.css";
 import BackgroundIllustration from "@/components/BackgroundIllustration";
 import Navbar from "@/components/Navbar";
@@ -7,10 +7,16 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import Preloader from "@/components/Preloader";
 import BackToTop from "@/components/BackToTop";
 
-const inter = Inter({
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  weight: ["400", "600", "700"],
-  variable: "--font-inter",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-space",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-dm",
 });
 
 export const metadata = {
@@ -20,7 +26,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`${spaceGrotesk.variable} ${dmSans.variable}`}>
       <body className="font-sans" style={{ background: "var(--background)", color: "var(--foreground)" }}>
         <ThemeProvider>
           <Preloader />

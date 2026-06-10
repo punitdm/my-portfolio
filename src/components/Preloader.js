@@ -24,7 +24,7 @@ export default function Preloader() {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.6, ease: "easeInOut" }}
-          className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#190F24]"
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#040A14]"
         >
           <div className="flex flex-col items-center gap-6">
             <motion.div
@@ -33,10 +33,10 @@ export default function Preloader() {
               transition={{ duration: 0.5, ease: "backOut" }}
               className="flex flex-col items-center gap-1"
             >
-              <h1 className="text-7xl font-extrabold bg-linear-to-r from-[#ebb2ff] to-[#ce85e9] bg-clip-text text-transparent">
+              <h1 className="text-7xl font-extrabold bg-linear-to-r from-[#00ff9c] to-[#00b8ff] bg-clip-text text-transparent">
                 Punit
               </h1>
-              <p className="text-sm font-medium tracking-[0.25em] uppercase text-[#ebb2ff]/60">
+              <p className="text-sm font-medium tracking-[0.25em] uppercase text-accent/60">
                 Performance Marketing
               </p>
             </motion.div>
@@ -45,7 +45,7 @@ export default function Preloader() {
                 initial={{ width: "0%" }}
                 animate={{ width: "100%" }}
                 transition={{ duration: 2, ease: "easeInOut" }}
-                className="h-full bg-gradient-to-r from-[#ebb2ff] to-[#ce85e9] rounded-full"
+                className="h-full bg-gradient-to-r from-[#00ff9c] to-[#00b8ff] rounded-full"
               />
             </div>
           </div>
